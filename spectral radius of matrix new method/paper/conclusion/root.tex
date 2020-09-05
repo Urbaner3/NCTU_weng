@@ -1,0 +1,101 @@
+\documentclass{article}
+
+%\usetheme{Warsaw}
+\usepackage{times}  % fonts are up to you
+\usepackage{amssymb, amsmath, mathrsfs,amsthm}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{ulem}
+
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+%\setCJKmainfont{微軟正黑體}
+\setCJKmainfont{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{simfang.ttf}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\begin{document}
+
+% THEOREMS ---------------------------------------------------------------
+\theoremstyle{plain}
+% block中的字會變成數學體, 斜體字
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{pf}[thm]{Proof}
+
+\newtheorem{eg}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+
+\theoremstyle{definition}
+% block中的字是正常字體
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+
+\newtheorem{algo}[thm]{Algorithm}
+
+\section{Conclusion}
+
+\begin{thm}
+Let $C$ be an $n\times n$ nonnegative matrix. For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$
+such that $c'_{ij}\geq c_{ij}$, and then choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$ and $c'_{kj}\geq c'_{nj}>0$, and 
+let $c'_{in}:=r'_i-c'_{ik}$ with $r'_k \geq r'_n$. Whereas $c'_{kk}\geq c'_{nk}$ is not necessary. Then the $n\times n$ matrix $C'=(c'_{ij})$ has a positive $k$-rooted eigenvector for $\rho(C')$ and $\rho(C)\leq \rho(C')$. 
+\end{thm}
+
+
+
+{\bf Proof}
+
+The assumptions are necessary that $PCQ \leq PC'Q$, and C' is k-rooted, by \ref{l_diag}, For certain d, if C'+d*I is k-rooted, then it has a k-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same eigenvector with C'+d*I and has eigenvalue $\lambda$. So C'+d*I and C+d*I meet the conditions of \ref{thm_main}, and we can show that $\rho(C' + d*I) \geq \rho(C +d*I)$ and then $\rho(C') \geq \rho(C)$  \qed
+
+
+
+{Example}
+For the following $4\times 4$ matrix
+$$C=\begin{pmatrix}
+0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1\\
+1 & 1 & 0 & 1\\
+1 & 1 & 1 & 0
+\end{pmatrix},$$
+we choose
+$$C'=\begin{pmatrix}
+0 & 0 & 1 & 1\\
+1 & 0 & 1 &  0\\
+1 & 1 & 0 & 1\\
+1 & 1 & 1 & 0
+\end{pmatrix}.$$
+Then
+$\rho(C)\leq \rho(C')$ by previous theorem.
+
+
+
+
+{\bf Counterexample}
+For the following two $4\times 4$ matrices
+$$C=\begin{pmatrix}
+0 & 0 & 1 & 1\\
+1 & 0 & 0 & 1\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 0
+\end{pmatrix},\quad C'=\begin{pmatrix}
+0 & 0 & 1 & 1\\
+1 & 0 & 1 &  0\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 0
+\end{pmatrix},$$ 
+we have $CQ\leq C'Q$, but 
+$\rho(C)=2.234\not\leq 2.148= \rho(C')$. 
+This is because $c'_{33}+c'_{34}\not\geq c'_{43}+c'_{44}$. 
+
+
+
+\end{document}

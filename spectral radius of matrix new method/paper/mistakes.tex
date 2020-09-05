@@ -1,0 +1,36 @@
+\documentclass{article}
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+%\setCJKmainfont{微軟正黑體}
+\setCJKmainfont{msjh.ttf}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\begin{document}
+
+\theoremstyle{plain}
+% block中的字會變成數學體, 斜體字
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{eg}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+
+還很多地方要看 我盡量記下今天跟老師找到的部份
+abstract 
+字型大小目前是9要改成12pt
+參考文獻 目前是學長的論文 和 perron Fronbinius theorem可以使用一本書
+證明內容根據的式子 動機 過程說明清楚
+我很多式子都還沒標上說明
+結論的例子加上圖
+投影片標題未改正成文字 proof(continue) , Our Method , k-rooted vector
+正體字 和斜體字 合法性確認 目前共識是 變數 新定義名詞 使用斜體 
+有一些\$符號 導致的斜體 未能訂正
+有些數學式 定義的標號 有問題 引用有問題
+
+
+\end{document}

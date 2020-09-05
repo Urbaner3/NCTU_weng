@@ -1,0 +1,132 @@
+\documentclass{article}
+%\usetheme{Warsaw}
+\usepackage{times}  % fonts are up to you
+\usepackage{amssymb, amsmath, mathrsfs,amsthm}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{ulem}
+
+
+\usepackage{fontspec}
+\usepackage{xeCJK}
+%\setCJKmainfont{微軟正黑體}
+\setCJKmainfont{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{simfang.ttf}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\begin{document}
+
+% THEOREMS ---------------------------------------------------------------
+\theoremstyle{plain}
+% block中的字會變成數學體, 斜體字
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{pf}[thm]{Proof}
+
+\newtheorem{eg}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+
+\theoremstyle{definition}
+% block中的字是正常字體
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{rem}[thm]{Remark}
+
+\newtheorem{algo}[thm]{Algorithm}
+
+
+
+
+\section{Preliminaries}
+
+\begin{defn}
+Spectral radius of a matrix $C$ is the largest absolute value of real eigenvalue of $C$. And here we are interested in spectral radius of the adjacency matrix for some simple graph.
+\end{defn}
+\begin{defn}
+    Eigenvalue of a matrix $C$ corresponds to an eigenvector $u$, where $u$ and its eigenvalue $\lambda $  satisfies $Cu = \lambda u$. 
+\end{defn}
+    We introduce a notation of sub-matrix, which is taken from some columns and some rows of a matrix. 
+    \begin{defn}We use $C[\alpha|\beta]$ to denote the sub-matrix of rows $\alpha$ of $C$ and columns $\beta$ of $C$ and $C(\alpha|\beta)$ is the sub-matrix of rows $[n]$ - $\alpha$ of $C$ and columns $[n] - \beta$ of $C$.
+    The bracket [] and parentheses () can be used together is the notation of sub-matrix, such as $C[k|e)$ or $C(k|e]$. 
+\end{defn}
+
+\thm
+        If $C$ is nonnegative square matrix, then the following holds. \\
+        The spectral radius $\rho(C)$ is an eigenvalue of $C$ with a corresponding nonnegative right eigenvector and a corresponding nonnegative left eigenvector.
+
+The following theorem is from [].
+
+\begin{thm}
+ Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
+Assume that
+\begin{enumerate}
+\item[(i)]    $PCQ\leq PC'Q$;
+\item[(ii)]  there exist a nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a scalar $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $Qu$;
+\item[(iii)] there exist a nonnegative row vector $v^T=(v_1, v_2, \ldots, v_n)$  and a scalar $\lambda\in \mathbb{R}$
+such that $\lambda$ is an eigenvalue of $C$ with associated  left eigenvector $v^TP$; and
+\item[(iv)] $v^TPQu>0.$
+\end{enumerate}
+ Then $\lambda\leq \lambda'$.
+    Moreover, $\lambda=\lambda'$ 
+if and only if
+    \begin{equation*}
+        \label{e3}
+(PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n \hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
+\end{equation*}
+\end{thm}
+
+
+\begin{pf}
+            Multiplying the nonnegative vector $u$ in (ii) to the right of both terms of  (i),
+        \begin{equation}
+            \label{e1}
+            PCQu\leq PC'Qu=\lambda'PQu.
+        \end{equation}
+        Multiplying the nonnegative left eigenvector $v^T$ of $C$ for $\lambda$ in assumption (iii) to the left of all terms  in (\ref{e1}), we have
+        \begin{equation}
+            \label{e2}
+            \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
+        \end{equation}
+        Now delete the positive term $v^TPQu$ by assumption (iv) to obtain $\lambda\leq \lambda'$ and finish the proof of the first part.
+
+
+
+        Assume that $\lambda=\lambda'$, so the inequality in (\ref{e2}) is an equality.  Especially $(PCQu)_i=(PC'Qu)_i$ for any $i$ with $v_i\not=0.$ Hence, $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ with $u_j\not=0.$
+         Conversely, (\ref{e3}) implies $$v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j=\sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so
+            $\lambda=\lambda'$ by (\ref{e2}). \qed
+            
+ \end{pf}
+
+ Throughout fix $k\in [n-1]$. Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the  position $k,n$ of $E_{kn}$. We will apply the previous theorem with $P=I$ and $$Q=I+E_{kn}=\begin{pmatrix}
+1 &  & & &  & 0 \\
+ & 1 &  &      &  &  \\
+ &  & \ddots & &  & 1 \\
+ &  &        & &  &  \\
+  &  & & & 1 &  \\
+0 &  & & &  & 1 \\
+\end{pmatrix}.$$
+\begin{defn}[k-rooted]
+ ~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
+\end{defn}
+\bigskip
+
+The following Lemma is immediate from the above definition.
+\bigskip
+
+\begin{lem}[vector rooted lemma]
+If ~$u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
+\begin{enumerate}
+\item[(i)] $v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
+\item[(ii)] $u_k>0$ if and only if $v'_k>v'_n$.
+\end{enumerate}
+\qed
+\end{lem}
+
+\end{document}

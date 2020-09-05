@@ -1,0 +1,206 @@
+\documentclass[12pt]{report}%{article}
+
+\topmargin 0pt
+
+\topmargin=-1.5cm
+\oddsidemargin=0.7cm
+\textheight=23.5cm
+\textwidth=15cm
+\setlength{\baselineskip}{24pt}
+\renewcommand{\baselinestretch}{1.5} %行
+
+
+
+
+\usepackage{fontspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+%\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{ulem}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{tabularx,array}
+\usepackage{pgf,tikz}
+%\usepackage{colortbl}
+
+\usetikzlibrary{arrows}
+\setCJKmainfont{標楷體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus1pt     %這兩行一定要加，中文才能自動換行
+\title{Combinatorial Identities from Lagrange's Interpolation Polynomial}
+\author{Student: Yen-Jung Huang  ~~~~~~~~~~~~~~~~~~~~~~~~~~Advisor: Chih-Wen Weng}
+\date{} %不要日期
+
+\def\UrlFont{\rm}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{eg}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{nota}[thm]{Notation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{ques}[thm]{Question}
+\newtheorem{pof}[thm]{Proof.}
+
+%\renewcommand {\refname} {Bibliography}
+
+\begin{document}
+
+\chapter{Preliminaries}
+
+Let $\mathbb{R}$ and $\mathbb{C}$ denote the field of real numbers and complex numbers respectively.
+
+
+\begin{defn}
+    Let $C$ be an $n \times n$ real matrix, and $u \in \mathbb{R}^n$ be a column vector. The scalar $\lambda \in \mathbb{C}$ is an $\it{eigenvalue}$ of C corresponding to an $\it{eigenvector}$ if $Cu = \lambda u$ 
+   
+\end{defn}
+
+\begin{defn}
+
+When $C$ is a real square matrix, the $\textit {spectral radius} $ $\rho(C)$ of $C$ is defined by
+$$\rho(C):=\max\{~|\lambda|~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
+where $|\lambda|$ is the magnitude of complex number $\lambda.$
+\end{defn}
+
+We are interested in spectral radius of the following matrix associated with a simple graph.
+
+\begin{defn} Given an undirected graph
+G, the$\textit{ adjacency matrix}$ of G is the square matrix $A = (a_{ij})$ indexed by vertices of G,
+and
+\[a_{ij} =\begin{cases}
+1, \text{if $i$ is adjacent to $j$}, \\
+0, \text{otherwise.}
+\end{cases}
+\]
+
+\end{defn}
+
+\begin{defn}
+Given an undirected graph G, the $\textit{spectral radius}$ of G is the spectral radius of the adjacency matrix A.
+\end{defn}
+
+
+
+    We introduce a notation of submatrix, which is taken from some columns and some rows of a matrix.
+
+ 
+\begin{defn}For a matrix $C=(c_{ij})$ and subsets $\alpha$, $\beta$ of row indices and column indices of $C$ respectively,  We use $C[\alpha|\beta]$ to denote the submatrix of $C$ with size $ |\alpha| \times |\beta| $ that has entries $c_{ij}$ for $i\in \alpha$ and $j\in\beta$,
+\begin{comment}
+$C[\alpha|\beta):=C[\alpha|\overline{\beta}],$ where $\overline{\beta}$ is the complement of $\beta$ in the set of column indices, and
+similarly, for the definitions of $C(\alpha|\beta]$ and $C(\alpha|\beta).$
+ For $\ell\in \mathbb{N},$ $[\ell]:=\{1, 2, \ldots, \ell\},$ symbol $-$ is the complete set of indices, and we use  $i$ to denote the singleton subset $\{i\}$ to reduce the double use of parentheses. For example of the $n\times n$ matrix $C$,
+ $C[-|n)=C[[n]|[n-1]]$ is the $n\times (n-1)$ submatrix of $C$ obtained by deleting the last column of $C$.
+
+    The bracket [] and parentheses () can be used together is the notation of sub-matrix, such as $C[k|e)$ or $C(k|e]$.
+\end{comment}
+
+\end{defn}
+
+\begin{thm}
+        If $C$ is a nonnegative square matrix, then spectral radius $\rho(C)$ is an eigenvalue of $C$ with a corresponding nonnegative right eigenvector and a corresponding nonnegative left eigenvector.
+\end{thm}
+
+
+The following theorem is from \cite{chang}.
+
+\begin{thm}
+ Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
+Assume that
+\begin{enumerate}
+\item[(i)]    $PCQ\leq PC'Q$;
+\item[(ii)]  there exist a nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a scalar $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $Qu$;
+\item[(iii)] there exist a nonnegative row vector $v^T=(v_1, v_2, \ldots, v_n)$  and a scalar $\lambda\in \mathbb{R}$
+such that $\lambda$ is an eigenvalue of $C$ with associated  left eigenvector $v^TP$; and
+\item[(iv)] $v^TPQu>0.$
+\end{enumerate}
+ Then $\lambda\leq \lambda'$.
+    Moreover, $\lambda=\lambda'$
+if and only if
+    \begin{equation*}
+        \label{e3}
+(PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n \hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
+\end{equation*}
+\end{thm}
+
+
+\begin{proof}
+            Multiplying the nonnegative vector $u$ in (ii) to the right of both terms of  (i),
+        \begin{equation}
+            \label{e1}
+            PCQu\leq PC'Qu=\lambda'PQu.
+        \end{equation}
+        Multiplying the nonnegative left eigenvector $v^T$ of $C$ for $\lambda$ in assumption (iii) to the left of all terms  in (\ref{e1}), we have
+        \begin{equation}
+            \label{e2}
+            \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
+        \end{equation}
+        Now delete the positive term $v^TPQu$ by assumption (iv) to obtain $\lambda\leq \lambda'$ and finish the proof of the first part.
+
+
+
+        Assume that $\lambda=\lambda'$, so the inequality in (\ref{e2}) is an equality.  Especially $(PCQu)_i=(PC'Qu)_i$ for any $i$ with $v_i\not=0.$ Hence, $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ with $u_j\not=0.$
+         Conversely, (\ref{e3}) implies $$v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j=\sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so
+            $\lambda=\lambda'$ by (\ref{e2}). \qed
+
+ \end{proof}
+ 
+ 
+ 
+ \newpage
+\begin{thebibliography}{20}
+\normalsize
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\bibitem{chang}
+Yen-Jen Chenga, Chih-wen Wenga, A matrix realization of spectral bounds
+of the spectral radius of a nonnegative matrix, (journal),....
+
+\bibitem{catalan}
+\newblock{James Haglund, The $q$,$t$-Catalan Numbers and the Space of Diagonal Harmonics: With an Appendix on the Combinatorics of Macdonald Polynomials},
+\newblock{\it University Lectures Series}, vol. 41, 2008
+
+\bibitem{combinatorics}
+\newblock{J.H. van Lint and R.M. Wilson, A Course in Combinatorics, second edition},
+\newblock{\it} Cambridge University Press, New York, 2001.
+
+\bibitem{euler}
+\newblock{H. W. Gould, Euler's formula nth differences of powers},
+\newblock{\it The American Mathematical Monthly }, vol. 85, No. 6, 450-467,1978
+
+\bibitem{rook}
+\newblock{Feryal Alayomt and Nicholas Krzywonos, Rook polynomials in three and higher dimensions},
+\newblock{\it }, 2009
+
+\bibitem{brualdi}
+\newblock{Richard A. Brualdi, Introductory Combinatorics, fifth edition},
+\newblock{\it },  Prentice Hall, New Jersey, 2009.
+
+\bibitem{qanalogue}
+\newblock{Bruce E. Sagan, Congruence Properties of $q$-Analogs},
+\newblock{\it Advances in Mathematics}, 95, 127-143,1992
+
+\bibitem{lagrange}
+\newblock{Eric W. Weisstein, Lagrange Interpolating Polynomial}, \newblock{MathWorld}
+
+\bibitem{9}
+\newblock{郭子翔,一個新恆等式的發現與研究}, preprint.
+
+\end{thebibliography}
+
+
+\end{document}
