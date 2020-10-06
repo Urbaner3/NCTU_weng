@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  5 SEP 2020 16:46
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  6 OCT 2020 10:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex"
-(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex
+**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex"
+(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18> (c:/texlive/2020/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
@@ -131,7 +131,9 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_verb_exspace_skip=\skip55
  (c:/texlive/2020/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2020/06/06 v3.8.4 Configuration file for xeCJK package
-)) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -287,7 +289,7 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yc=\dimen197
 \pgf@xd=\dimen198
 \pgf@yd=\dimen199
-\w@pgf@writea=\write3
+\w@pgf@writea=\write4
 \r@pgf@reada=\read2
 \c@pgf@counta=\count282
 \c@pgf@countb=\count283
@@ -455,27 +457,11 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@expandcount=\count303
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (c:/texlive/2020/texmf-dist/tex/latex/blkarray/blkarray.sty
-Package: blkarray 2015/02/27 v0.07 Block array (dpc)
-\c@BAenumi=\count304
-\BA@col=\count305
-\BA@block@cnt=\count306
-\BA@final@box=\box65
-\BA@first@box=\box66
-\BA@colsep=\dimen294
-\BA@ftn=\toks43
-\BAextrarowheight=\dimen295
-\BAextraheightafterhline=\dimen296
-\BAarrayrulewidth=\dimen297
-\BAdoublerulesep=\dimen298
-\BAfootskip=\dimen299
-\BA@dashbox=\box67
-\BA@ddashbox=\box68
-) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen300
+\arrowsize=\dimen294
 ))
 
 Package fontspec Info: Could not resolve font "標楷體/BI" (it probably doesn't
@@ -500,10 +486,9 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             <->"標楷體/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-\c@thm=\count307
-
-No file our_result.aux.
-\openout1 = `our_result.aux'.
+\c@thm=\count304
+ (./preliminiaries.aux)
+\openout1 = `preliminiaries.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
@@ -515,7 +500,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 62.
-(c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 62.
@@ -594,56 +579,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 66.
  (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-Overfull \hbox (27.3177pt too wide) in paragraph at lines 95--96
-[]\TU/lmr/bx/n/12 Lemma 1.2. []\TU/lmr/m/it/12 If  $\OML/cmm/m/it/12 u \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; u[]; [] ; u[]\OT1/cmr/m/n/12 )[]$ \TU/lmr/m/it/12 and $\OML/cmm/m/it/12 v[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 ) := \OML/cmm/m/it/12 Qu \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]; u[] \OT1/cmr/m/n/12 +
- []
-
-[1
+) [1
 
 
 ]
 
-LaTeX Warning: Reference `Q1' on page 2 undefined on input line 126.
+LaTeX Warning: Citation `'content'' on page 2 undefined on input line 105.
 
+Excluding 'comment' comment.
 
-LaTeX Warning: Reference `pre0' on page 2 undefined on input line 126.
+LaTeX Warning: Citation `chang' on page 2 undefined on input line 123.
 
-[2]
-
-LaTeX Warning: Reference `m_rooted' on page 3 undefined on input line 154.
-
-
-LaTeX Warning: Reference `v_rooted' on page 3 undefined on input line 178.
-
-[3]
-
-LaTeX Warning: Reference `lma_m_rooted' on page 4 undefined on input line 206.
-
-
-LaTeX Warning: Reference `l_diag' on page 4 undefined on input line 206.
-
-
-LaTeX Warning: Reference `thm_main' on page 4 undefined on input line 206.
-
-
-LaTeX Warning: Reference `thm_main' on page 4 undefined on input line 225.
-
-[4] [5] (./our_result.aux)
+[2] [3] (./preliminiaries.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 17615 strings out of 479277
- 403526 string characters out of 5883835
- 677333 words of memory out of 5000000
- 34965 multiletter control sequences out of 15000+600000
- 539905 words of font info for 73 fonts, out of 8000000 for 9000
+ 17367 strings out of 479277
+ 400660 string characters out of 5883835
+ 672087 words of memory out of 5000000
+ 34719 multiletter control sequences out of 15000+600000
+ 538512 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,9n,60p,797b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,12n,60p,487b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on our_result.pdf (5 pages).
+Output written on preliminiaries.pdf (3 pages).
