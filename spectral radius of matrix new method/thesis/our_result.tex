@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}%{article}
+\documentclass[12pt]{report}
 
 \topmargin 0pt
 
@@ -57,7 +57,11 @@
 \newtheorem{ques}[thm]{Question}
 \newtheorem{pof}[thm]{Proof.}
 
+\usepackage{comment}
+
 %\renewcommand {\refname} {Bibliography}
+
+
 
 \begin{document}
 
@@ -83,7 +87,7 @@ Q=I+E_{kn}=\begin{blockarray}{cccccc}
 \end{equation}
 
 
-\begin{defn}\label{v_rooted}
+\begin{defn}[$k$-rooted vector]%\label{k_rooted}
  ~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
 \end{defn}
 \bigskip
@@ -92,7 +96,7 @@ The following Lemma is immediate from the above definition.
 \bigskip
 
 \begin{lem}
-If ~$u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
+If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
 \begin{enumerate}
 \item[(i)] $v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
 \item[(ii)] $u_k>0$ if and only if $v'_k>v'_n$.
@@ -118,18 +122,23 @@ if and only if
 \item[(b)]  $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
 \item[(c)]   $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
 \end{enumerate} \qed
-
-
 \end{thm}
 
 \begin{proof}
-The proof is based on Theorem 1.7 with $P = I$ and $Q = I + E_{kn} \text{ in } (\ref{Q1} )  $. The assumption (i) $PCQ\leq PC'Q$ of Theorem 1.7 holds by the condition (i) of this theorem. Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition (ii) and Lemma 2.2(i). Hence the assumption (ii) of Theorem 1.7 holds. The assumptions (iii) and (iv) of Theorem 1.7 clearly hold by conditions (iii),(iv) of this theorem since $P = I$ and $v'= Qu$  Hence $\lambda \leq \lambda' $ by the conclusion of Theorem 1.7. Moreover $\lambda = \lambda'$ if and only if \ref{pre0} holds, and this is equivalent to conditions (a),(b),(c) of this theorem. 
+The proof is based on Theorem 1.7 with $P = I$ and $Q = I + E_{kn} \text{ in } (\ref{Q1} )$. 
+The assumption (i) $PCQ\leq PC'Q$ of Theorem 1.7 holds by the condition (i) of this theorem. 
+Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition (ii) and
+ Lemma 2.2(i). Hence the assumption (ii) of Theorem 1.7 holds. The assumptions (iii) and (iv)
+  of Theorem 1.7 clearly hold by conditions (iii),(iv) of this theorem since $P = I$ and
+   $v'= Qu$  Hence $\lambda \leq \lambda' $ by the conclusion of Theorem 1.7. Moreover
+    $\lambda = \lambda'$ if and only if \ref{pre0} holds, and this is equivalent to
+     conditions (a),(b),(c) of this theorem. 
 \end{proof}
 
 We are interested in the matrices $C'$ that have $k$-rooted eigenvectors.
 Motivated by the condition (i) of theorem 2.3, we provide the following two definitions. 
 
-\begin{defn}
+\begin{defn}[(k,n)-sum]
 For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-{\it sum} vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$.
 \end{defn}
 
@@ -199,11 +208,15 @@ such that $c'_{ij}\geq c_{ij}$ and $c'_{kj}\geq c'_{nj}>0$, and choose $r'_i$ su
 $r'_k \geq r'_n$. Moreover choose $c'_{in}:=r'_i-c'_{ik}$. Then $\rho(C)\leq \rho(C')$, when $C'=(c'_{ij})$.
 \end{thm}
 
-
-
 \begin{proof}
 
-The assumptions are necessary that $PCQ \leq PC'Q$, and C' is $k$-rooted,based on (\ref{lma_m_rooted}) ; by \ref{l_diag}, For certain d, if $C'+dI$ is $k$-rooted, then it has a $k$-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the conditions of \ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and then $\rho(C') \geq \rho(C)$  \qed
+The assumptions are necessary that $PCQ \leq PC'Q$, and C' is $k$-rooted,based on
+ (\ref{lma_m_rooted}) ; by \ref{l_diag}, For certain d, if $C'+dI$ is $k$-rooted, then it has
+  a $k$-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same
+   eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the
+    conditions of \ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and
+     then $\rho(C') \geq \rho(C)$  \qed
+\end{proof}
 
 
 
@@ -259,6 +272,6 @@ we have $CQ\leq C'Q$, but
 $\rho(C)=2.234\not\leq 2.148= \rho(C')$.
 This is because $c'_{33}+c'_{34}\not\geq c'_{43}+c'_{44}$.
 
-\end{proof}
+
 
 \end{document}

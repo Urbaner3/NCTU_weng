@@ -1,4 +1,5 @@
 \documentclass{article}
+
 % \topmargin 0pt
 
 % \topmargin=-1.5cm
@@ -58,37 +59,249 @@
 
 \usepackage{comment}
 
+%\renewcommand {\refname} {Bibliography}
+
+
 
 \begin{document}
 
+\section{Preliminaries}
+    
+    Let $\mathbb{R}$ and $\mathbb{C}$ denote the 
+
+field of real numbers and complex numbers respectively.
+    \begin{defn}
+        
+
+Let $C$ be an $n \times n$ real nonnegative matrix, and $u \in \mathbb{R}^n$ be a 
+
+nonzero column vector. The scalar $\lambda \in \mathbb{C}$ is an $\it{eigenvalue}$ 
+
+of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
+        
+
+%Also, $C$ has an left eigenvector $v^T$, when $v^TC=\lambda v^T$.
+    \end{defn}
+ 
+
+   \begin{defn}
+        When $C$ is an $n \times n$ real matrix, the $\textit 
+
+{spectral radius} $ $\rho(C)$ of $C$ is defined by
+        $$\rho(C):=\max\{~|
+
+\lambda|~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
+        where $|
+
+\lambda|$ is the magnitude of complex number $\lambda.$
+    \end{defn}
+
+    
+
+\begin{thm} 
+        %\bf{Perron–Frobenius theorem} \\
+        If $C$ is 
+
+nonnegative square matrix, then the spectral radius $\rho(C)$ is an eigenvalue of 
+
+$C$ with a corresponding nonnogative right eigenvector and a corresponding 
+
+nonnegative left eigenvector.
+    \end{thm}
+
+    We are interested in spectral 
+
+radius of the following matrix associated with a simple graph.
+
+    \begin{defn}
+  
+
+  Given an undirected graph G, the$\textit{ adjacency matrix}$ of G is the square 
+
+matrix $A = (a_{ij})$ indexed by vertices of G, and
+    \[a_{ij} =\begin{cases}
+   
+
+ 1, \text{if $i$ is adjacent to $j$}, \\
+    0, \text{otherwise.}
+    \end{cases}
+ 
+
+   \]
+    \end{defn}
+    
+    \begin{defn}
+    Given an undirected graph G, the $
+
+\textit{spectral radius}$  $\rho(G) $ of G is the spectral radius of the adjacency 
+
+matrix of G.
+    \end{defn}
+
+
+
+
+    We introduce a notation of submatrix, which is 
+
+taken from some columns and some rows of a matrix.
+    \begin{defn}
+        For a 
+
+matrix $C=(c_{ij})$ and subsets $\alpha$, $\beta$ of row indices and column 
+
+indices of 
+        $C$ respectively,  We use $C[\alpha|\beta]$ to denote the 
+
+submatrix of $C$ with size
+         $ |\alpha| \times |\beta| $ that has entries 
+
+$c_{ij}$ for $i\in \alpha$ and $j\in\beta$,
+    \end{defn}
+
+
+We introduce two 
+
+matrices $P$ and $Q$ in the following theorem, where $P$ is a permutation matrix 
+
+which is multiplied to the left side, and $Q$ is sum of elementary matrix and 
+
+certain binary matrix. In which $P$ generalize row permutation on cases of $C$ 
+
+matrix,and $Q$ is the transform from $C'$ to C', which is the first n-1 columns 
+
+and sum of certain columns. We aim to find C' such that $C'$ majors $C$,i.e. $C
+
+\leq C'$
+
+    
+
+The following theorem is from [].\cite{content}
+
+    \begin
+
+{thm}\label{pre_thm}
+        Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n
+
+\times n$ matrices.
+        Assume that
+        \begin{enumerate}
+            
+
+\item[(i)]    $PCQ\leq PC'Q$;\label{Q1}
+            \item[(ii)]  there exist a 
+
+nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a scalar $\lambda'\in 
+
+\mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated 
+
+eigenvector $Qu$;
+            \item[(iii)] there exist a nonnegative row vector 
+
+$v^T=(v_1, v_2, \ldots, v_n)$  and a scalar $\lambda\in \mathbb{R}$
+            
+
+such that $\lambda$ is an eigenvalue of $C$ with associated  left eigenvector 
+
+$v^TP$; and
+            \item[(iv)] $v^TPQu>0.$
+            \end{enumerate}
+       
+
+     Then $\lambda\leq \lambda'$.
+                Moreover, $\lambda=\lambda'$ 
+   
+
+         if and only if
+                \begin{equation}
+                    
+
+\label{e3}
+            (PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n 
+
+\hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
+        \end{equation}
+    \end
+
+{thm}%
+
+
+
+    % { Proof}
+            Multiplying the nonnegative vector $u$ in 
+
+(ii) to the right of both terms of  (i),
+        \begin{equation}\label{e1}
+       
+
+     PCQu\leq PC'Qu=\lambda'PQu.
+        \end{equation}
+        Multiplying the 
+
+nonnegative left eigenvector $v^T$ of $C$ for $\lambda$ in assumption (iii) to the 
+
+left of all terms  in (\ref{e1}), we have
+        \begin{equation}\label{e2}
+      
+
+      \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
+        \end{equation}
+ 
+
+       Now delete the positive term $v^TPQu$ by assumption (iv) to obtain $
+
+\lambda\leq \lambda'$ and finish the proof of the first part.
+
+
+
+    { Proof 
+
+(Continue)}
+        Assume that $\lambda=\lambda'$, so the inequality in (\ref
+
+{e2}) is an equality.  Especially $(PCQu)_i=(PC'Qu)_i$ for any $i$ with $v_i
+
+\not=0.$ Hence, $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ 
+
+with $u_j\not=0.$ 
+         Conversely, (\ref{e3}) implies $$v^TPCQu=\sum_{i,j} 
+
+v_i(PCQ)_{ij}u_j=\sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so
+            $
+
+\lambda=\lambda'$ by (\ref{e2}).
+
+
 \section{Our Method}
 We use [n-1] as notation of the set of elements from one to n-1, which is {1,2,$...$,n}.
-Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the position $k,n$ of $E_{kn}$. We will apply the previous theorem with $P=I$ and $$Q=I+E_{kn}=\begin{pmatrix}
+Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the position $k,n$ of $E_{kn}$. We will apply the previous theorem with $P=I$ and 
+
+
+
+\begin{equation}
+Q=I+E_{kn}=\begin{pmatrix} \label{Q1}
 1 &  & & &  & 0 \\
  & 1 &  &      &  &  \\
  &  & \ddots & &  & 1 \\
  &  &        & &  &  \\
   &  & & & 1 &  \\
 0 &  & & &  & 1 \\
-\end{pmatrix}.$$
+\end{pmatrix}.
+\end{equation}
 
 
 
-% 
-    { $k$-rooted vector}
 
-\begin{defn}
- A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
+
+
+\begin{defn}[$k$-rooted vector]
+~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
 \end{defn}
 \bigskip
 
 The following Lemma is immediate from the above definition.
 \bigskip
 
-\begin{lem}
-\begin{equation}
-    \textit{vector rooted lemma}\label{v_rooted}
-\end{equation}
+\begin{lem}[vector rooted lemma]\label{v_rooted}
 If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
 \begin{enumerate}
 \item[(i)] $v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
@@ -97,17 +310,12 @@ If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ld
 \qed
 \end{lem}
 
-% 
-
-% 
-    { Our first result}
-
-\begin{thm}\label{thm_main}
+\begin{thm}[Our first result]\label{thm_main}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$ be  $n\times n$ matrices.
 Assume that
 \begin{enumerate}
 \item[(i)]   $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
-\item[(ii)] there exist a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+\item[(ii)] there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
 such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
 \item[(iii)] there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
 \item[(iv)] $v^Tv'>0.$
@@ -116,9 +324,9 @@ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
 Moreover, $\lambda=\lambda'$
 if and only if
 \begin{enumerate}
-\item[(a)] $c_{ik}+c_{in}=c'_{ik}+c'_{in}$\qquad for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
-\item[(b)]
-$c'_{ij}=c_{ij}\qquad \hbox{for~}1\leq i\leq n,~1\leq j\leq n-1 \hbox{~with~} v_i\ne 0 \hbox{~and~} v'_j> v'_n.$
+    \item[(a)]    $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
+    \item[(b)]  $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
+    \item[(c)]   $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
 \end{enumerate} \qed
 \end{thm}
 % 
@@ -137,14 +345,14 @@ $c'_{ij}=c_{ij}\qquad \hbox{for~}1\leq i\leq n,~1\leq j\leq n-1 \hbox{~with~} v_
         if and only if (\ref{e3}) holds, and this is equivalent to conditions (a),(b) of this theorem. 
     \end{proof}   
     
+    We are interested in the matrices $C'$ that have $k$-rooted eigenvectors.
+    Motivated by the condition (i) of theorem 2.3, we provide the following two definitions. 
 
-% 
-
-% 
-    {\bf $k$-rooted matrix}
     \begin{defn}[(k,n)-sum]
-        For a matrix $C'=(c'_{ij})$ of $n$ columns, the $(k, n)$-{\it sum} vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
+        For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-{\it sum} vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
     \end{defn}
+
+    Note that the last column of $C'Q$ is the $(k, n)$-{\it sum} vector of $C'$
 
     \begin{defn}[k-rooted matrix]\label{m_rooted}
         A  matrix $C'=(c'_{ij})$ is called {\it $k$-rooted}  if its  columns and its $(k, n)$-sum vector are all $k$-rooted except the last column of $C'$.
@@ -238,16 +446,10 @@ $c'_{ij}=c_{ij}\qquad \hbox{for~}1\leq i\leq n,~1\leq j\leq n-1 \hbox{~with~} v_
     \end{proof}
 
 
-% 
-
 \begin{lem}\label{l_diag}   %end of label
 If a square matrix $C'$ has a rooted eigenvector for $\lambda'$, then $C'+dI$ also has
 the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is the identity matrix with the same size of $C'$.
 \end{lem}
-
-% 
-
-
 
 \begin{thm}
     Let $C$ be an $n\times n$ nonnegative Tmatrix. For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$
@@ -255,17 +457,18 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
     $r'_k \geq r'_n$. Moreover choose $c'_{in}:=r'_i-c'_{ik}$. Then $\rho(C)\leq \rho(C')$, when $C'=(c'_{ij})$.
 \end{thm}
 
+\begin{Proof}
+
+The assumptions are necessary that $PCQ \leq PC'Q$, and C' is k-rooted, by (\ref{v_rooted}),
+ For certain d, if C'+dI is k-rooted, then it has a k-rooted eigenvector with its spectral
+  radius $\lambda + d$. C' would share the same eigenvector with C'+dI and has eigenvalue
+   $\lambda$. So C'+dI and C+dI meet the conditions of (\ref{l_diag}), and we can show that
+    $\rho(C' + dI) \geq \rho(C +dI)$ and then $\rho(C') \geq \rho(C)$  \qed    
+\end{proof}
 
 
 
-    { Proof}
-
-The assumptions are necessary that $PCQ \leq PC'Q$, and C' is k-rooted, by (~\ref{v_rooted}), For certain d, if C'+dI is k-rooted, then it has a k-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same eigenvector with C'+dI and has eigenvalue $\lambda$. So C'+dI and C+dI meet the conditions of (\ref{l_diag}), and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and then $\rho(C') \geq \rho(C)$  \qed    
-
-
-
-
-    { Example}
+\subsection{Example}
     For the following $4\times 4$ matrix
     $$C=\begin{pmatrix}
     0 & 0 & 1 & 1\\
@@ -280,12 +483,13 @@ The assumptions are necessary that $PCQ \leq PC'Q$, and C' is k-rooted, by (~\re
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 0
     \end{pmatrix}.$$
+    Check the conditions $C[[n]|[n-1]]  \leq C'[[n]|[n-1]] $ \ref{thm_main},
     Then
     $\rho(C)\leq \rho(C')$ by previous theorem.
 
 
 
-    {Counterexample}
+\subsection{Counterexample}
     For the following two $4\times 4$ matrices
     $$C=\begin{pmatrix}
     0 & 0 & 1 & 1\\
@@ -298,6 +502,19 @@ The assumptions are necessary that $PCQ \leq PC'Q$, and C' is k-rooted, by (~\re
     1 & 1 & 0 & 0\\
     1 & 1 & 1 & 0
     \end{pmatrix},$$ 
+    specify $n$=4, $k$=3 in $Q = I +E_{kn} = I + E_{34}$  
+$$CQ=\begin{pmatrix}
+0 & 0 & 1 & 2\\
+1 & 0 & 0 & 1\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1
+\end{pmatrix},\quad C'Q=\begin{pmatrix}
+0 & 0 & 1 & 2\\
+1 & 0 & 1 & 1\\
+1 & 1 & 0 & 0\\
+1 & 1 & 1 & 1
+\end{pmatrix},$$
+
     we have $CQ\leq C'Q$, but 
     $\rho(C)=2.234\not\leq 2.148= \rho(C')$. 
     This is because $c'_{33}+c'_{34}\not\geq c'_{43}+c'_{44}$. 
