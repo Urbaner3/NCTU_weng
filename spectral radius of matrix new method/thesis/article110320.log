@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  4 NOV 2020 17:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  5 NOV 2020 17:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -219,6 +219,15 @@ Package: ulem 2019/11/18
 ) (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup6
+) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks28
+\labelindent=\skip63
+\enit@outerparindent=\dimen179
+\enit@toks=\toks29
+\enit@inbox=\box52
+\enit@count@id=\count281
+\enitdp@description=\count282
 )
 
 Package fontspec Info: Could not resolve font "標楷體/BI" (it probably doesn't
@@ -243,22 +252,8 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             <->"標楷體/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-\c@thm=\count281
-
-
-! LaTeX Error: No counter 'chapter' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 \newtheorem{thm}{Theorem}[chapter]
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\c@thm=\count283
+ (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
  Excluding comment 'comment')
 No file article110320.aux.
@@ -352,627 +347,104 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70.
  (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Runaway argument?
-{\itshape 
-! Paragraph ended before \text@ was complete.
-<to be read again> 
-                   \par 
-l.89 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.89 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.89 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-\textit  #1->\ifmmode \nfss@text {\itshape #1}
-                                              \else \hmode@bgroup \text@comm...
-l.89 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.90 {spectral radius} $ $\rho
-                              (C)$ of $C$ is defined by
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.92 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.92 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.92 
-     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.92 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.93 \lambda
-            |~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.96 \lambda
-            |$ is the magnitude of complex number $\lambda.$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.128 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.128 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.128 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.128 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+LaTeX Warning: Citation `chang' on page 1 undefined on input line 94.
 
 
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130    \]
-           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.130    \]
-           
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.130    \]
-           
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.135 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.136 \textit{spectral radius}$  $\rho
-                                      (G) $ of G is the spectral radius of t...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.173 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.174 \leq
-           C'$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Citation `content' on page 1 undefined on input line 134.
 
 [1
 
 ]
 
-LaTeX Warning: Citation `content' on page 2 undefined on input line 178.
-
-Runaway argument?
-{
-! Paragraph ended before \@ifundefined was complete.
-<to be read again> 
-                   \par 
-l.181 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Too many }'s.
-\begin  #1->\@ifundefined {#1}
-                              {\def \reserved@a {\@latex@error {Environment ...
-l.181 
-      
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-! Use of \@citex doesn't match its definition.
-l.182 {
-       thm}\label{pre_thm}
-If you say, e.g., `\def\a1{...}', then you must always
-put `1' after `\a', since control sequence names are
-made up of letters only. The macro here has not been
-followed by the required stuff, so I'm ignoring it.
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.182 {thm}
-           \label{pre_thm}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.184 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.185 \times
-             n$ matrices.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.194 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.194 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.194 
-      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+LaTeX Warning: Reference `pre_thm' on page 2 undefined on input line 155.
 
 
-! LaTeX Error: \mathbb allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 \mathbb
-             {R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.195 \mathbb{R}$ such that $\lambda
-                                    '$ is an eigenvalue of $C'$ with associated
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.216 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.216 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.219             (PC'Q)_
-                         {ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.220 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.221 \hbox{~with~} v_
-                      i\ne 0 \hbox{~and~} u_j\ne 0.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.222         \end{equation}
-                            
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.222         \end{equation}
-                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Runaway argument?
-! Paragraph ended before \end  was complete.
-<to be read again> 
-                   \par 
-l.224 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.234 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.234 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.236      PCQu\leq
-                    PC'Qu=\lambda'PQu.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.237         \end{equation}
-                            
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.237         \end{equation}
-                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 156.
 
 
-LaTeX Warning: Reference `e1' on page 2 undefined on input line 242.
+LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 157.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.244 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.244 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+LaTeX Warning: Reference `pre_thm_em3' on page 2 undefined on input line 162.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.246       \lambda
-                    v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.247         \end{equation}
-                            
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+LaTeX Warning: Reference `pre1' on page 2 undefined on input line 162.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.247         \end{equation}
-                            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.251 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Reference `pre_thm_em4' on page 2 undefined on input line 167.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.252 \lambda
-             \leq \lambda'$ and finish the proof of the first part.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-Runaway argument?
-! Paragraph ended before \ref was complete.
-<to be read again> 
-                   \par 
-l.260 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+LaTeX Warning: Reference `pre2' on page 2 undefined on input line 169.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.262 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.263 \not
-          =0.$ Hence, $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Reference `pre0' on page 2 undefined on input line 172.
+
+
+LaTeX Warning: Reference `pre2' on page 2 undefined on input line 173.
 
 [2]
 
-LaTeX Warning: Reference `e3' on page 3 undefined on input line 266.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.267 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.267 
-      
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.268 v_
-        i(PCQ)_{ij}u_j=\sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.271 \lambda
-             =\lambda'$ by (\ref{e2}).
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 241.
 
 
-LaTeX Warning: Reference `e2' on page 3 undefined on input line 271.
+LaTeX Warning: Reference `Q_1' on page 3 undefined on input line 241.
 
 
-Overfull \hbox (28.4574pt too wide) in paragraph at lines 305--306
-\TU/lmr/bx/n/10 Lemma .8 \TU/lmr/m/n/10 (vector rooted lemma)\TU/lmr/bx/n/10 . \TU/lmr/m/it/10 If $\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 u[]; u[]; [] ; u[]\OT1/cmr/m/n/10 )[]$ \TU/lmr/m/it/10 and $\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 v[]; v[]; [] ; v[]\OT1/cmr/m/n/10 ) :=
- []
-
-[3]
-
-LaTeX Warning: Reference `pre_thm' on page 4 undefined on input line 339.
+LaTeX Warning: Reference `pre_thm_em1' on page 3 undefined on input line 242.
 
 
-LaTeX Warning: Reference `Q1' on page 4 undefined on input line 339.
+LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 242.
 
 
-LaTeX Warning: Reference `pre_thm' on page 4 undefined on input line 340.
+LaTeX Warning: Reference `thm_main:condition_i' on page 3 undefined on input line 242.
 
 
-LaTeX Warning: Reference `pre_thm' on page 4 undefined on input line 342.
+LaTeX Warning: Reference `thm_main:condition_ii' on page 3 undefined on input line 243.
 
 
-LaTeX Warning: Reference `pre_thm' on page 4 undefined on input line 343.
+LaTeX Warning: Reference `lem:rt_vec' on page 3 undefined on input line 244.
 
 
-LaTeX Warning: Reference `pre_thm' on page 4 undefined on input line 344.
+LaTeX Warning: Reference `lem:rt_vec:en1' on page 3 undefined on input line 244.
 
 
-LaTeX Warning: Reference `e3' on page 4 undefined on input line 345.
+LaTeX Warning: Reference `pre_thm_em2' on page 3 undefined on input line 244.
 
-[4] Excluding 'comment' comment.)
+
+LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 244.
+
+
+LaTeX Warning: Reference `pre_thm_em3' on page 3 undefined on input line 244.
+
+
+LaTeX Warning: Reference `pre_thm_em4' on page 3 undefined on input line 244.
+
+
+LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 245.
+
+
+LaTeX Warning: Reference `thm_main:condition_iii' on page 3 undefined on input line 245.
+
+
+LaTeX Warning: Reference `thm_main:condition_iv' on page 3 undefined on input line 245.
+
+
+LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 246.
+
+
+LaTeX Warning: Reference `pre0' on page 3 undefined on input line 247.
+
+
+LaTeX Warning: Reference `thm_main:equ_cond_a' on page 3 undefined on input line 248.
+
+
+LaTeX Warning: Reference `thm_main:equ_cond_b' on page 3 undefined on input line 248.
+
+
+LaTeX Warning: Reference `thm_main:equ_cond_c' on page 3 undefined on input line 248.
+
+[3] Excluding 'comment' comment.)
 Runaway argument?
 ! File ended while scanning use of \next.
 <inserted text> 
@@ -991,11 +463,11 @@ you'd better type `E' or `X' now and fix your file.
 
  
 Here is how much of TeX's memory you used:
- 6043 strings out of 479682
- 160611 string characters out of 5892022
- 464543 words of memory out of 5000000
- 23255 multiletter control sequences out of 15000+600000
- 537508 words of font info for 56 fonts, out of 8000000 for 9000
+ 6392 strings out of 479682
+ 166985 string characters out of 5892022
+ 472089 words of memory out of 5000000
+ 23599 multiletter control sequences out of 15000+600000
+ 537516 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 44i,12n,60p,351b,332s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on article110320.pdf (4 pages).
+ 44i,12n,60p,351b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on article110320.pdf (3 pages).

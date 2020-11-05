@@ -25,6 +25,7 @@
 \usepackage{pgf,tikz}
 \usepackage{blkarray} %line 80-92 Q formula matrix index
 %\usepackage{colortbl}
+\usepackage{enumitem}% enumerate labels   roman
 
 \usetikzlibrary{arrows}
 \setCJKmainfont{標楷體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
@@ -72,11 +73,12 @@ We will prove the main Theorems introduced in the introduction. First, we need s
 
 
 \begin{equation}
+  \label{Q_1}
 Q=I+E_{kn}=\begin{blockarray}{cccccc}
 %a & b & c & d & e \\
  &  &  & &  \\
 \begin{block}{(ccccc)c}
-	\label{Q1}
+	
   1 &   &   &   &   &  \\
     & 1 &   &   &   &  \\
     &   & \ddots &   & 1 & k \\
@@ -88,18 +90,18 @@ Q=I+E_{kn}=\begin{blockarray}{cccccc}
 
 
 \begin{defn}[$k$-rooted vector]%\label{k_rooted}
- ~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
+ A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
 \end{defn}
 \bigskip
 
 The following Lemma is immediate from the above definition.
 \bigskip
 
-\begin{lem}
+\begin{lem}\label{lem:rt_vec}
 If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
-\begin{enumerate}
-\item[(i)] $v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
-\item[(ii)] $u_k>0$ if and only if $v'_k>v'_n$.
+\begin{enumerate}[label=(\Roman*)]
+\item \label{lem:rt_vec:en1}$v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
+\item $u_k>0$ if and only if $v'_k>v'_n$.
 \end{enumerate}
 \qed
 \end{lem}
@@ -107,59 +109,60 @@ If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ld
 \begin{thm} \label{thm_main}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$ be  $n\times n$ matrices.
 Assume that
-\begin{enumerate}
-\item[(i)]   $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
-\item[(ii)] there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+\begin{enumerate}[label=(\Roman*)]
+\item \label{thm_main:condition_i} $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
+\item \label{thm_main:condition_ii}there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
 such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
-\item[(iii)] there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
-\item[(iv)] $v^Tv'>0.$
+\item there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+\item $v^Tv'>0.$
 \end{enumerate}
  Then $\lambda\leq \lambda'$.
 Moreover, $\lambda=\lambda'$
 if and only if
-\begin{enumerate}
-\item[(a)]    $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
-\item[(b)]  $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
-\item[(c)]   $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
+\begin{enumerate}[label=(\alph*)]
+\item  \label{thm_main:equ_cond_a} $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
+\item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
+\item \label{thm_main:equ_cond_c} $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
 \end{enumerate} \qed
 \end{thm}
 
-\begin{proof}
-The proof is based on Theorem 1.7 with $P = I$ and $Q = I + E_{kn} \text{ in } (\ref{Q1} )$. 
-The assumption (i) $PCQ\leq PC'Q$ of Theorem 1.7 holds by the condition (i) of this theorem. 
-Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition (ii) and
- Lemma 2.2(i). Hence the assumption (ii) of Theorem 1.7 holds. The assumptions (iii) and (iv)
-  of Theorem 1.7 clearly hold by conditions (iii),(iv) of this theorem since $P = I$ and
-   $v'= Qu$  Hence $\lambda \leq \lambda' $ by the conclusion of Theorem 1.7. Moreover
+\begin{pof}
+The proof is based on Theorem~\ref{pre_thm} with $P = I$ and $Q = I + E_{kn}$ in (\ref{Q_1} ). 
+The assumption \ref{pre_thm_em1} $PCQ\leq PC'Q$ of Theorem~\ref{pre_thm} holds by the condition \ref{thm_main:condition_i} of this theorem. 
+Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition \ref{thm_main:condition_ii} and
+ Lemma~\ref{lem:rt_vec}\ref{lem:rt_vec:en1}. Hence the assumption \ref{pre_thm_em2} of Theorem~\ref{pre_thm} holds. The assumptions \ref{pre_thm_em3} and \ref{pre_thm_em4}
+  of Theorem~\ref{pre_thm} clearly hold by conditions~\ref{thm_main:condition_iii},\ref{thm_main:condition_iv} of this theorem since $P = I$ and
+   $v'= Qu$  Hence $\lambda \leq \lambda' $ by the necessary condition of Theorem~\ref{pre_thm}. Moreover
     $\lambda = \lambda'$ if and only if \ref{pre0} holds, and this is equivalent to
-     conditions (a),(b),(c) of this theorem. 
-\end{proof}
+     conditions \ref{thm_main:equ_cond_a},\ref{thm_main:equ_cond_b},\ref{thm_main:equ_cond_c} of this theorem. 
+\end{pof}
 
 We are interested in the matrices $C'$ that have $k$-rooted eigenvectors.
 Motivated by the condition (i) of theorem 2.3, we provide the following two definitions. 
 
 \begin{defn}[(k,n)-sum]
-For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-{\it sum} vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$.
+For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)-sum$ vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$.
 \end{defn}
 
-Note that the last column of $C'Q$ is the $(k, n)$-{\it sum} vector of $C'$
+Note that the last column of $C'Q$ is the $(k, n)-sum$ vector of $C'$
 
 \begin{defn}\label{m_rooted}
-A  matrix $C'=(c'_{ij})$ is called {\it $k$-rooted}  if its  columns and its $(k, n)$-{\it sum} vector are all $k$-rooted except the last column of $C'$.
+A  matrix $C'=(c'_{ij})$ is called $k-rooted$  if its  columns and its $(k, n)-sum$ vector are all $k$-rooted except the last column of $C'$.
 \end{defn}
 
 The following theorem shows that a $k$-rooted matrix has a $k$-rooted eigenvector. 
 
-\begin{thm} \label{lma_m_rooted}
+\begin{lem} \label{lma_m_rooted}
 Let $C'=(c'_{ij})$ be an $n\times n$ nonnegative matrix. Then the following (i)-(iii) hold.
-    \begin{enumerate}
-        \item[(i)]$C'$ is a $k$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
-        \item[(ii)]Assume that $C'$ is $k$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$ for $\rho(C')$. Then  $C'$ has a $k$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
-        \item[(iii)] $\rho(C')$ = $\rho(Q^{-1}C'Q)$
+    \begin{enumerate}[label=(\Roman*)]
+        \item $C'$ is a $k$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
+        \item Assume that $C'$ is $k$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$
+         for $\rho(C')$. Then  $C'$ has a $k$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
+        \item $\rho(C')$ = $\rho(Q^{-1}C'Q)$
     \end{enumerate}
-\end{thm}
+\end{lem}
 
-\begin{proof}
+\begin{pof}
 (i) is immediate from Definition~\ref{m_rooted} and the observation that
 $$Q^{-1}=I-E_{kn}=\begin{pmatrix}
 1 &  & & &  & 0 \\
@@ -184,7 +187,7 @@ $$
 
 
 (ii)
-By Lemma~\ref{v_rooted} $v'=Qu$ is $k$-rooted.
+By Lemma~\ref{lem:rt_vec} $v'=Qu$ is $k$-rooted.
 Since $Q^{-1}C'Qu=\rho(C')u$ by the assumption, we have
 $Q^{-1} C' Q u  = Q^{-1} \rho(C') Qu  =\rho(C')u$  \\
 $C'Qu=\rho(C')Qu$.
@@ -194,7 +197,7 @@ $C'Qu=\rho(C')Qu$.
 (iii)
 Since $C'$ and $Q^{-1}C'Q$ have the same set of eigenvalues, clearly $\rho(C')$ = $\rho(Q^{-1}C'Q)$.
 
-\end{proof}
+\end{pof}
 
 
 \begin{lem}\label{l_diag}
@@ -203,24 +206,26 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
 \end{lem}
 
 \begin{thm}
-Let $C$ be an $n\times n$ nonnegative Tmatrix. For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$
+Let $C$ be an $n\times n$ nonnegative matrix. For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$
 such that $c'_{ij}\geq c_{ij}$ and $c'_{kj}\geq c'_{nj}>0$, and choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$, and
 $r'_k \geq r'_n$. Moreover choose $c'_{in}:=r'_i-c'_{ik}$. Then $\rho(C)\leq \rho(C')$, when $C'=(c'_{ij})$.
 \end{thm}
 
-\begin{proof}
-
-The assumptions are necessary that $PCQ \leq PC'Q$, and C' is $k$-rooted,based on
- (\ref{lma_m_rooted}) ; by \ref{l_diag}, For certain d, if $C'+dI$ is $k$-rooted, then it has
+\begin{pof}
+These assumptions are necessary that $PCQ \leq PC'Q$, and C' is $k$-rooted,based on
+ (\ref{lma_m_rooted});\\
+ calculation:  \\
+    \\
+ by \ref{l_diag}, For certain d, if $C'+dI$ is $k$-rooted, then it has
   a $k$-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same
    eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the
     conditions of \ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and
      then $\rho(C') \geq \rho(C)$  \qed
-\end{proof}
+\end{pof}
 
 
 
-\noindent{\bf Example}
+\section{Example}
 For the following $4\times 4$ matrix
 $$C=\begin{pmatrix}
 0 & 0 & 1 & 1\\
@@ -235,14 +240,14 @@ $$C'=\begin{pmatrix}
 1 & 1 & 0 & 1\\
 1 & 1 & 1 & 0
 \end{pmatrix}.$$
-Check the conditions $C[[n]|[n-1]]  \leq C'[[n]|[n-1]] $ \ref{thm_main},   
+Check the conditions of theorem~\ref{thm_main},   
 Then
-$\rho(C)\leq \rho(C')$ by Theorem 4.8.
+$\rho(C)\leq \rho(C')$ by Theorem 4.8. % @@@@@@@@@@@
 
 
 
 
-{\bf Counterexample}
+\section{Counterexample}
 For the following two $4\times 4$ matrices
 $$C=\begin{pmatrix}
 0 & 0 & 1 & 1\\
