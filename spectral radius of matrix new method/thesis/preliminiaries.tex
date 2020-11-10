@@ -25,6 +25,7 @@
 \usepackage{tabularx,array}
 \usepackage{pgf,tikz}
 %\usepackage{colortbl}
+\usepackage{enumitem}% enumerate labels   roman
 
 \usetikzlibrary{arrows}
 \setCJKmainfont{標楷體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
@@ -38,7 +39,7 @@
 
 
 \theoremstyle{plain}
-\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{thm}{Theorem}[section]
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
@@ -63,46 +64,52 @@
 
 \chapter{Preliminaries}
 
-Let $\mathbb{R}$ and $\mathbb{C}$ denote the field of real numbers and complex numbers respectively.
+Let $\mathbb{R}$ and $\mathbb{C}$ denote the
+ field of real numbers and complex numbers respectively.
 
 
 \begin{defn}
-    Let $C$ be an $n \times n$ real matrix, and $u \in \mathbb{R}^n$ be a nonzero column vector. The scalar $\lambda \in \mathbb{C}$ is an $\it{eigenvalue}$ of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
+    Let $C$ be an $n \times n$ real matrix, and $u \in \mathbb{R}^n$ be a
+     nonzero column vector. The scalar $\lambda \in \mathbb{C}$ is an $\it{eigenvalue}$
+      of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
    
 \end{defn}
 
 \begin{defn}
 
-When $C$ is an $n \times n$ real matrix, the $\textit {spectral radius} $ $\rho(C)$ of $C$ is defined by
-$$\rho(C):=\max\{~|\lambda|~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
+When $C$ is an $n \times n$ real matrix, the $\textit {spectral radius} $ $\rho(C)$ of $C$
+ is defined by 
+ $$\rho(C):=\max\{~|\lambda|~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
 where $|\lambda|$ is the magnitude of complex number $\lambda.$
 \end{defn}
 
 We are interested in spectral radius of the following matrix associated with a simple graph.
 
-\begin{defn} Given an undirected graph
-G, the$\textit{ adjacency matrix}$ of G is the square matrix $A = (a_{ij})$ indexed by vertices of G,
-and
-\[a_{ij} =\begin{cases}
-1, \text{if $i$ is adjacent to $j$}, \\
-0, \text{otherwise.}
-\end{cases}
-\]
-
+\begin{defn}
+    Given an undirected graph G, the$\textit{ adjacency matrix}$ of G is the square
+     matrix $A = (a_{ij})$ indexed by vertices of G, and
+      \[a_{ij} =\begin{cases}
+    1, \text{if $i$ is adjacent to $j$}, \\
+    0, \text{otherwise.}
+                \end{cases}
+    \]
 \end{defn}
 
 \begin{defn}
-Given an undirected graph G, the $\textit{spectral radius}$  $\rho(G) $ of G is the spectral radius of the adjacency matrix of G.
+Given an undirected graph G, the $\textit{spectral radius}$  $\rho(G) $ of G is the spectral
+ radius of the adjacency matrix of G.
 \end{defn}
 
+    We introduce a notation of submatrix, which is taken from some columns and some rows of a
+     matrix.
 
-
-    We introduce a notation of submatrix, which is taken from some columns and some rows of a matrix.
-
- 
-\begin{defn}For a matrix $C=(c_{ij})$ and subsets $\alpha$, $\beta$ of row indices and column indices of $C$ respectively,  We use $C[\alpha|\beta]$ to denote the submatrix of $C$ with size $ |\alpha| \times |\beta| $ that has entries $c_{ij}$ for $i\in \alpha$ and $j\in\beta$,
-
-The following theorem is a part of Perron-Frobenius theorem \cite{'content'}.
+\begin{defn}
+    For a matrix $C=(c_{ij})$ and subsets $\alpha$, $\beta$ of row indices and column
+    indices of $C$ respectively,  We use $C[\alpha|\beta]$ to denote the submatrix of $C$ with
+    size $ |\alpha| \times |\beta| $ that has entries $c_{ij}$ for $i\in \alpha$
+    and $j\in\beta$,
+\end{defn}
+The following theorem is a part of Perron-Frobenius theorem %\cite{'content'}.
 \begin{comment}
 $C[\alpha|\beta):=C[\alpha|\overline{\beta}],$ where $\overline{\beta}$ is the complement of $\beta$ in the set of column indices, and
 similarly, for the definitions of $C(\alpha|\beta]$ and $C(\alpha|\beta).$
@@ -112,56 +119,58 @@ similarly, for the definitions of $C(\alpha|\beta]$ and $C(\alpha|\beta).$
     The bracket [] and parentheses () can be used together is the notation of sub-matrix, such as $C[k|e)$ or $C(k|e]$.
 \end{comment}
 
-\end{defn}
 
-%Peron Frobius theorem
-\begin{thm}
-        If $C$ is a nonnegative square matrix, then spectral radius $\rho(C)$ is an eigenvalue of $C$ with a corresponding nonnegative right eigenvector and a corresponding nonnegative left eigenvector.
+\begin{thm}[Peron Frobius theorem]
+        If $C$ is a nonnegative square matrix, then spectral radius $\rho(C)$ is an eigenvalue
+         of $C$ with a corresponding nonnegative right eigenvector and a corresponding nonnegative
+          left eigenvector.
 \end{thm}
 
 
-The following theorem is from \cite{chang}. For completeness, we also provide the proof.
+The following theorem is from \%. For completeness, we also provide the proof.  %\cite{chang}
 
-\begin{thm}
- Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
+\begin{thm}\label{pre_thm}
+    Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
 Assume that
-\begin{enumerate}
-\item[(i)]    $PCQ\leq PC'Q$;
-\item[(ii)]  there exist a nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a scalar $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $Qu$;
-\item[(iii)] there exist a nonnegative row vector $v^T=(v_1, v_2, \ldots, v_n)$  and a scalar $\lambda\in \mathbb{R}$
-such that $\lambda$ is an eigenvalue of $C$ with associated  left eigenvector $v^TP$; and
-\item[(iv)] $v^TPQu>0.$
+\begin{enumerate}[label=(\roman*)]
+    \item \label{pre_thm_em1}  $PCQ\leq PC'Q$;   %
+    \item \label{pre_thm_em2}  there exist a nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a
+    scalar $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with
+    associated eigenvector $Qu$;
+    \item \label{pre_thm_em3}  there exist a nonnegative row vector $v^T=(v_1, v_2, \ldots, v_n)$  and a scalar
+    $\lambda\in \mathbb{R}$such that $\lambda$ is an eigenvalue of $C$ with associated  left
+    eigenvector $v^TP$; and
+    \item \label{pre_thm_em4} $v^TPQu>0.$
 \end{enumerate}
- Then $\lambda\leq \lambda'$.
-    Moreover, $\lambda=\lambda'$
-if and only if
-    \begin{equation}
-        \label{pre0}
-(PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n \hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
-\end{equation}
+    Then $\lambda\leq \lambda'$. Moreover, $\lambda=\lambda'$if and only if
+    \begin{equation}\label{pre0}
+        (PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n \hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
+    \end{equation}
 \end{thm}
 
 
-\begin{proof}
-            Multiplying the nonnegative vector $u$ in assumption (ii), where $Qu$ is eigenvector of $C'$,  to the right of both terms of  (i),
-        \begin{equation}
-            \label{pre1}
-            PCQu\leq PC'Qu=\lambda'PQu.
-        \end{equation}
-        Multiplying the nonnegative vector $v^T$  in assumption (iii) , where $v^TP$ is left eigenvector of $C$ for $\lambda$,to the left of all terms  in (\ref{pre1}), we have
-        \begin{equation}
-            \label{pre2}
-            \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
-        \end{equation}
-        Now delete the positive term $v^TPQu$ by assumption (iv) to obtain $\lambda\leq \lambda'$ and finish the proof of the first part.
+\begin{pof}
+    Multiplying the nonnegative vector $u$ in theorem~\ref{pre_thm} assumption
+    ~\ref{pre_thm_em1}, where $Qu$ is eigenvector of $C'$,  to the right of both terms of
+    ~\ref{pre_thm_em1},
+    \begin{equation}\label{pre1}
+        PCQu\leq PC'Qu=\lambda'PQu.
+    \end{equation}
+    Multiplying the nonnegative left eigenvector $v^T$ of $C$ for $\lambda$ in assumption
+    ~\ref{pre_thm_em3} to the left of all terms  in (\ref{pre1}), where $v^TP$ is
+    left eigenvector of $C$ for $\lambda$, thus we have
+    \begin{equation}\label{pre2}
+        \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
+    \end{equation}
+        Now delete the positive term $v^TPQu$ by assumption \ref{pre_thm_em4} to obtain
+         $\lambda\leq \lambda'$ and finish the proof of the first part.
+    Assume that $\lambda=\lambda'$, so the inequality in (\ref{pre2}) is an equality.
+    Especially $(PCQu)_i=(PC'Qu)_i$ for any $i$ with $v_i\not=0.$ Hence,
+    $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ with
+    $u_j\not=0.$ Conversely, (\ref{pre0}) implies $$v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j=
+    \sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so $\lambda=\lambda'$ by (\ref{pre2}).
 
-
-
-        Assume that $\lambda=\lambda'$, so the inequality in (\ref{pre2}) is an equality.  Especially $(PCQu)_i=(PC'Qu)_i$ for any $i$ with $v_i\not=0.$ Hence, $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ with $u_j\not=0.$
-         Conversely, (\ref{pre0}) implies $$v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j=\sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so
-            $\lambda=\lambda'$ by (\ref{pre2}).
-
- \end{proof}
+ \end{pof}
 
 
 \end{document}

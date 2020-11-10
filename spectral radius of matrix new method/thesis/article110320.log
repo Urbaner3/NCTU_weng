@@ -1,42 +1,23 @@
-<<<<<<< HEAD
-<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  6 OCT 2020 10:15
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  6 NOV 2020 17:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex"
-(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex
-========
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  6 NOV 2020 16:21
-entering extended mode
- \write18 enabled.
- %&-line parsing enabled.
-**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex"
-(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex
->>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
-=======
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  6 NOV 2020 15:37
-entering extended mode
- \write18 enabled.
- %&-line parsing enabled.
-**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex"
-(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
+**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article110320.tex"
+(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article110320.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-06> (c:/texlive/2020/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
-(c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+L3 programming layer <2020-09-06> (c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(c:/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count164
-\c@chapter=\count165
-\c@section=\count166
-\c@subsection=\count167
-\c@subsubsection=\count168
-\c@paragraph=\count169
-\c@subparagraph=\count170
-\c@figure=\count171
-\c@table=\count172
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -44,32 +25,32 @@ File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 Package: expl3 2020-09-06 L3 programming layer (loader) 
  (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2020-09-11 L3 backend support: XeTeX
-\g__graphics_track_int=\count173
+\g__graphics_track_int=\count172
 \l__pdf_internal_box=\box45
-\g__pdf_backend_object_int=\count174
-\g__pdf_backend_annotation_int=\count175
+\g__pdf_backend_object_int=\count173
+\g__pdf_backend_annotation_int=\count174
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
  (c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
-\l__xparse_current_arg_int=\count176
-\g__xparse_grabber_int=\count177
-\l__xparse_m_args_int=\count178
-\l__xparse_v_nesting_int=\count179
+\l__xparse_current_arg_int=\count175
+\g__xparse_grabber_int=\count176
+\l__xparse_m_args_int=\count177
+\l__xparse_v_nesting_int=\count178
 ))
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
  (c:/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count180
-\l__fontspec_language_int=\count181
-\l__fontspec_strnum_int=\count182
-\l__fontspec_tmp_int=\count183
-\l__fontspec_tmpa_int=\count184
-\l__fontspec_tmpb_int=\count185
-\l__fontspec_tmpc_int=\count186
-\l__fontspec_em_int=\count187
-\l__fontspec_emdef_int=\count188
-\l__fontspec_strong_int=\count189
-\l__fontspec_strongdef_int=\count190
+\l__fontspec_script_int=\count179
+\l__fontspec_language_int=\count180
+\l__fontspec_strnum_int=\count181
+\l__fontspec_tmp_int=\count182
+\l__fontspec_tmpa_int=\count183
+\l__fontspec_tmpb_int=\count184
+\l__fontspec_tmpc_int=\count185
+\l__fontspec_em_int=\count186
+\l__fontspec_emdef_int=\count187
+\l__fontspec_strong_int=\count188
+\l__fontspec_strongdef_int=\count189
 \l__fontspec_tmpa_dim=\dimen135
 \l__fontspec_tmpb_dim=\dimen136
 \l__fontspec_tmpc_dim=\dimen137
@@ -82,20 +63,20 @@ Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
 ) (c:/texlive/2020/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2020-05-15 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen138
-\l__xtemplate_tmp_int=\count191
+\l__xtemplate_tmp_int=\count190
 \l__xtemplate_tmp_muskip=\muskip16
 \l__xtemplate_tmp_skip=\skip49
 )
-\l__xeCJK_tmp_int=\count192
+\l__xeCJK_tmp_int=\count191
 \l__xeCJK_tmp_box=\box46
 \l__xeCJK_tmp_dim=\dimen139
 \l__xeCJK_tmp_skip=\skip50
  (c:/texlive/2020/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2020/08/23 v2.5.4 Document and package hooks (CTEX)
 )
-\g__xeCJK_space_factor_int=\count193
-\l__xeCJK_begin_int=\count194
-\l__xeCJK_end_int=\count195
+\g__xeCJK_space_factor_int=\count192
+\l__xeCJK_begin_int=\count193
+\l__xeCJK_end_int=\count194
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -105,7 +86,7 @@ Package: ctexhook 2020/08/23 v2.5.4 Document and package hooks (CTEX)
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip51
-\g__xeCJK_node_int=\count196
+\g__xeCJK_node_int=\count195
 \c__xeCJK_CJK_node_dim=\dimen140
 \c__xeCJK_CJK-space_node_dim=\dimen141
 \c__xeCJK_default_node_dim=\dimen142
@@ -115,10 +96,10 @@ Package: ctexhook 2020/08/23 v2.5.4 Document and package hooks (CTEX)
 \l__xeCJK_ccglue_skip=\skip52
 \l__xeCJK_ecglue_skip=\skip53
 \l__xeCJK_punct_kern_skip=\skip54
-\l__xeCJK_last_penalty_int=\count197
+\l__xeCJK_last_penalty_int=\count196
 \l__xeCJK_last_bound_dim=\dimen146
 \l__xeCJK_last_kern_dim=\dimen147
-\l__xeCJK_widow_penalty_int=\count198
+\l__xeCJK_widow_penalty_int=\count197
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2335.
@@ -142,28 +123,14 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_margin_dim=\dimen164
 \l__xeCJK_minimum_bound_dim=\dimen165
 \l__xeCJK_kerning_margin_dim=\dimen166
-\g__xeCJK_family_int=\count199
-\l__xeCJK_fam_int=\count266
-\g__xeCJK_fam_allocation_int=\count267
-\l__xeCJK_verb_case_int=\count268
+\g__xeCJK_family_int=\count198
+\l__xeCJK_fam_int=\count199
+\g__xeCJK_fam_allocation_int=\count266
+\l__xeCJK_verb_case_int=\count267
 \l__xeCJK_verb_exspace_skip=\skip55
  (c:/texlive/2020/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
-<<<<<<< HEAD
-<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
-File: xeCJK.cfg 2020/06/06 v3.8.4 Configuration file for xeCJK package
-)) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
- Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-========
 File: xeCJK.cfg 2020/08/23 v3.8.5 Configuration file for xeCJK package
 )) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
->>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
-=======
-File: xeCJK.cfg 2020/08/23 v3.8.5 Configuration file for xeCJK package
-)) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
-\CommentStream=\write3
- Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -190,13 +157,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count269
+\inf@bad=\count268
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count270
-\leftroot@=\count271
+\uproot@=\count269
+\leftroot@=\count270
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count272
-\DOTSCASE@=\count273
+\classnum@=\count271
+\DOTSCASE@=\count272
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -205,15 +172,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen169
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count274
-\c@MaxMatrixCols=\count275
+\macc@depth=\count273
+\c@MaxMatrixCols=\count274
 \dotsspace@=\muskip17
-\c@parentequation=\count276
-\dspbrk@lvl=\count277
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
 \tag@help=\toks17
-\row@=\count278
-\column@=\count279
-\maxfields@=\count280
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
 \andhelp@=\toks18
 \eqnshift@=\dimen170
 \alignsep@=\dimen171
@@ -244,7 +211,7 @@ Package: amsthm 2020/05/29 v2.20.6
 \UL@skip=\skip62
 \UL@hook=\toks27
 \UL@height=\dimen176
-\UL@pe=\count281
+\UL@pe=\count280
 \UL@pixel=\dimen177
 \ULC@box=\box51
 Package: ulem 2019/11/18
@@ -269,7 +236,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \TX@old@col=\dimen183
 \TX@target=\dimen184
 \TX@delta=\dimen185
-\TX@cols=\count282
+\TX@cols=\count281
 \TX@ftn=\toks29
 ) (c:/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks30
@@ -319,16 +286,16 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yc=\dimen197
 \pgf@xd=\dimen198
 \pgf@yd=\dimen199
-\w@pgf@writea=\write4
+\w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count283
-\c@pgf@countb=\count284
-\c@pgf@countc=\count285
-\c@pgf@countd=\count286
+\c@pgf@counta=\count282
+\c@pgf@countb=\count283
+\c@pgf@countc=\count284
+\c@pgf@countd=\count285
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count287
+\pgf@sys@id@count=\count286
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -340,11 +307,11 @@ File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )
-\pgfsys@objnum=\count288
+\pgfsys@objnum=\count287
 ))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count289
-\pgfsyssoftpath@bigbuffer@items=\count290
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -365,13 +332,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen256
-\pgfmath@count=\count291
+\pgfmath@count=\count290
 \pgfmath@box=\box55
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
 \pgfmath@stack@operation=\toks40
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count292
+\c@pgfmathroundto@lastzeros=\count291
 )) (c:/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen257
@@ -401,7 +368,7 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box56
 \pgf@hbox=\box57
 \pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count293
+\pgf@picture@serial@count=\count292
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen275
@@ -422,8 +389,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen280
-\pgf@sys@shading@range@num=\count294
-\pgf@shadingcount=\count295
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -459,7 +426,7 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count296
+\pgf@plot@mark@count=\count295
 \pgfplotmarksize=\dimen285
 )
 \tikz@lastx=\dimen286
@@ -474,32 +441,24 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@figbox@bg=\box62
 \tikz@tempbox=\box63
 \tikz@tempbox@bg=\box64
-\tikztreelevel=\count297
-\tikznumberofchildren=\count298
-\tikznumberofcurrentchild=\count299
-\tikz@fig@count=\count300
+\tikztreelevel=\count296
+\tikznumberofchildren=\count297
+\tikznumberofcurrentchild=\count298
+\tikz@fig@count=\count299
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count301
-\pgfmatrixcurrentcolumn=\count302
-\pgf@matrix@numberofcolumns=\count303
+\pgfmatrixcurrentrow=\count300
+\pgfmatrixcurrentcolumn=\count301
+\pgf@matrix@numberofcolumns=\count302
 )
-\tikz@expandcount=\count304
+\tikz@expandcount=\count303
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-<<<<<<< HEAD
-<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
-))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen294
-========
 ))) (c:/texlive/2020/texmf-dist/tex/latex/blkarray/blkarray.sty
 Package: blkarray 2015/02/27 v0.07 Block array (dpc)
-\c@BAenumi=\count305
-\BA@col=\count306
-\BA@block@cnt=\count307
+\c@BAenumi=\count304
+\BA@col=\count305
+\BA@block@cnt=\count306
 \BA@final@box=\box65
 \BA@first@box=\box66
 \BA@colsep=\dimen294
@@ -517,28 +476,13 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen300
 \enit@toks=\toks44
 \enit@inbox=\box69
-\enit@count@id=\count308
-\enitdp@description=\count309
-=======
-))) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip65
-\enit@outerparindent=\dimen294
-\enit@toks=\toks43
-\enit@inbox=\box65
-\enit@count@id=\count305
-\enitdp@description=\count306
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
+\enit@count@id=\count307
+\enitdp@description=\count308
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-<<<<<<< HEAD
 \arrowsize=\dimen301
->>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
-=======
-\arrowsize=\dimen295
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 ))
 
 Package fontspec Info: Could not resolve font "標楷體/BI" (it probably doesn't
@@ -563,305 +507,119 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             <->"標楷體/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-<<<<<<< HEAD
-<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
-\c@thm=\count304
- (./preliminiaries.aux)
-\openout1 = `preliminiaries.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 62.
-========
-\c@thm=\count310
+\c@thm=\count309
  (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
- Excluding comment 'comment') (./our_result.aux)
-\openout1 = `our_result.aux'.
+ Excluding comment 'comment') (./article110320.aux)
+\openout1 = `article110320.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 67.
->>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 66.
  (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-=======
-\c@thm=\count307
-
-No file preliminiaries.aux.
-\openout1 = `preliminiaries.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 63.
-(c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-<<<<<<< HEAD
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 67.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 67.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 67.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 67.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 67.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 67.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 67.
-LaTeX Font Info:    Redeclaring math accent \check on input line 67.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 67.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 67.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 67.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 67.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 67.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 66.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 66.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 66.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 66.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 66.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 66.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 66.
+LaTeX Font Info:    Redeclaring math accent \check on input line 66.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 66.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 66.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 66.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 66.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 67.
+(Font)              `operators' in the math version `normal' on input line 66.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 67.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 66.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 67.
+(Font)              `operators' in the math version `bold' on input line 66.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 67.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 66.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 67.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 67.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 67.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 67.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 67.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 66.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 67.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 67.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 67.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 66.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 67.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 66.
  ABD: EveryShipout initializing macros
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 72.
-=======
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 63.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 63.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 63.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 63.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 63.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 63.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 63.
-LaTeX Font Info:    Redeclaring math accent \check on input line 63.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 63.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 63.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 63.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 63.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 63.
- ABD: EveryShipout initializing macros
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
-(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67.
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70.
  (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-
-<<<<<<< HEAD
-]
-Overfull \hbox (35.0297pt too wide) in paragraph at lines 147--148
-[]\TU/lmr/bx/n/12 Lemma 1.0.4. []\TU/lmr/m/it/12 If $\OML/cmm/m/it/12 u \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; u[]; [] ; u[]\OT1/cmr/m/n/12 )[]$ \TU/lmr/m/it/12 and $\OML/cmm/m/it/12 v[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 ) := \OML/cmm/m/it/12 Qu \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]; u[] \OT1/cmr/m/n/12 +
- []
-
-<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
-LaTeX Warning: Citation `'content'' on page 2 undefined on input line 105.
-
-Excluding 'comment' comment.
-
-LaTeX Warning: Citation `chang' on page 2 undefined on input line 123.
-
-[2] [3] (./preliminiaries.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
-Here is how much of TeX's memory you used:
- 17367 strings out of 479277
- 400660 string characters out of 5883835
- 672087 words of memory out of 5000000
- 34719 multiletter control sequences out of 15000+600000
- 538512 words of font info for 65 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 52i,12n,60p,487b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on preliminiaries.pdf (3 pages).
-========
-[2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 260--269
+] [2] [3] Excluding 'comment' comment. [4]
+Underfull \hbox (badness 10000) in paragraph at lines 359--368
 
  []
 
-[5] [6] (./our_result.aux) ) 
-Here is how much of TeX's memory you used:
- 18009 strings out of 479682
- 410371 string characters out of 5892022
- 689846 words of memory out of 5000000
- 34946 multiletter control sequences out of 15000+600000
- 542655 words of font info for 78 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 52i,9n,60p,555b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on our_result.pdf (6 pages).
->>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
-=======
-] Excluding 'comment' comment.
-
-LaTeX Warning: Reference `pre_thm' on page 2 undefined on input line 153.
-
-
-LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 154.
-
-
-LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 155.
-
-
-LaTeX Warning: Reference `pre_thm_em3' on page 2 undefined on input line 160.
-
-
-LaTeX Warning: Reference `pre1' on page 2 undefined on input line 160.
-
-
-LaTeX Warning: Reference `pre_thm_em4' on page 2 undefined on input line 165.
-
-
-LaTeX Warning: Reference `pre2' on page 2 undefined on input line 167.
-
-
-LaTeX Warning: Reference `pre0' on page 2 undefined on input line 170.
-
-[2]
-
-LaTeX Warning: Reference `pre2' on page 3 undefined on input line 171.
-
-[3] (./preliminiaries.aux)
-
-LaTeX Warning: There were undefined references.
-
+[5] [6] (./article110320.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 17708 strings out of 479682
- 406608 string characters out of 5892022
- 683410 words of memory out of 5000000
- 34653 multiletter control sequences out of 15000+600000
- 541262 words of font info for 70 fonts, out of 8000000 for 9000
+ 17909 strings out of 479682
+ 409482 string characters out of 5892022
+ 693478 words of memory out of 5000000
+ 34856 multiletter control sequences out of 15000+600000
+ 537516 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,12n,60p,530b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,12n,60p,539b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on preliminiaries.pdf (3 pages).
->>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
+Output written on article110320.pdf (6 pages).

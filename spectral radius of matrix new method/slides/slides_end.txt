@@ -1,0 +1,49 @@
+corre_mis1019  17pages    github/NCTU_weng/ branch:paragraphs   .../slides/conclusion_dec.*
+preliminaries 2
+	theorem (definition)2
+	theorem 3
+	proof	4
+	(continue) 5
+our method	6
+k-rooted vector 7
+our first result 8
+k-rooted metrix 9  definition
+	theorem 10
+	remark 11
+	proof 12
+	lemma	13
+	theorem 14
+	proof 15
+	
+	Example 16
+
+counter example , and calculation 17
+
+--------------end of the document----------
+
+conclusion  19pages   Oct29
+preliminaries 2
+	theorem 3
+	proof	4
+	(continue) 5
+our method	6
+k-rooted vector 7
+our first result 8
+k-rooted metrix 9
+	##theorem 10
+	##proof 11
+	#background 12
+	remark	13
+	#proof 14
+application and some summantion
+	theorem 15
+	theorem 16
+	proof   blank) 17
+	Example 18
+
+conclusion theorem (blank) 19
+
+
+
+
+
