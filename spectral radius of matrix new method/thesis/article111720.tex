@@ -55,7 +55,7 @@
 \newtheorem{nota}[thm]{Notation}
 \newtheorem{rem}[thm]{Remark}
 \newtheorem{ques}[thm]{Question}
-\newtheorem{pof}[thm]{Proof.}
+% \newtheorem{pof}[thm]{Proof.}
 
 \usepackage{comment}
 
@@ -82,7 +82,7 @@ of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
 \end{defn}
 
 
-\begin{defn}
+\begin{defn} \cite{prn_fros1}
     When $C$ is an $n \times n$ real matrix, the $\textit {spectral radius} $ $\rho(C)$
         of $C$ is defined by 
         $$\rho(C):=\max\{~|\lambda|~\ |~~\lambda\hbox{ is an eigenvalue of $C$}\},$$
@@ -90,8 +90,8 @@ of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
 \end{defn}
 
     
-[Perron–Frobenius theorem]
-\begin{thm} \cite{chang}
+Perron–Frobenius theorem
+\begin{thm} \cite{chang} \cite{prn_fros2}
     If $C$ is nonnegative square matrix, then the spectral radius $\rho(C)$ is an
     eigenvalue of $C$ with a corresponding nonnogative right eigenvector and a
     corresponding nonnegative left eigenvector.
@@ -131,7 +131,7 @@ We introduce two matrices $P$ and $Q$ in the following theorem, where $P$ is a p
  matrix,and $Q$ is the transform from $C'$ to C', which is the first n-1 columns
   and sum of certain columns. We aim to find C' such that $C'$ majors $C$,i.e. $C\leq C'$
  
-The following theorem is from [\cite{content}].
+The following theorem is from \cite{chang}.
 
 \begin{thm}\label{pre_thm}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
@@ -152,7 +152,7 @@ Assume that
     \end{equation}
 \end{thm}
 
-\begin{pof}
+\begin{proof}
     Multiplying the nonnegative vector $u$ in theorem~\ref{pre_thm} assumption
     ~\ref{pre_thm_em1}, where $Qu$ is eigenvector of $C'$,  to the right of both terms of
     ~\ref{pre_thm_em1},    
@@ -172,11 +172,11 @@ Assume that
         $(PCQ)_{ij}=(PC'Q)_{ij}$ for any $i$ with $v_i\not=0$ and any $j$ with
         $u_j\not=0.$ Conversely, (\ref{pre0}) implies $$v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j=
          \sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu,$$ so $\lambda=\lambda'$ by (\ref{pre2}).
-\end{pof}
+\end{proof}
 
 \section{Our Method}
 We use [n-1] as notation of the set of elements from one to n-1, which is {1,2,$...$,n}.
-Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the position $k,n$ of $E_{kn}$. We will apply the previous theorem with $P=I$ and 
+Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the position $k,n$ of $E_{kn}$. We will apply the previous theorem \ref{pre_thm} with $P=I$ and 
 
 
 
@@ -196,26 +196,27 @@ Q=I+E_{kn}=\begin{pmatrix}
 
 
 
-\begin{defn}[$k$-rooted vector]
+\begin{defn}%[$k$-rooted vector]
 ~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $k$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
 \end{defn}
 \bigskip
 
-The following Lemma is immediate from the above definition.
+The following Lemma is immediate from the above definition.%[vector rooted lemma]
 \bigskip
 
-\begin{lem}[vector rooted lemma]\label{lem:rt_vec}
+\begin{lem}\label{lem:rt_vec}
 If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
 \begin{enumerate}[label=(\roman*)]
 \item \label{lem:rt_vec:en1}$v'$ is $k$-rooted  if and only if  $u$ is nonnegative;
 \item $u_k>0$ if and only if $v'_k>v'_n$.
 \end{enumerate}
-\qed
+% \qed
 \end{lem}
 
 Below is our first result, in which the first condition implies the first n-1 columns of C major to
  the columns of C', and the (k,n)-sum column of C is also major to C'. The second and the third condition
- suggest that C and C' have nonnegative eigenvectors which are k-rooted. And the forth condition is simplier but with the same meaning with ()\ref{pre_thm})
+ suggest that C and C' have nonnegative eigenvectors which are k-rooted. And the forth condition is simplier
+  but with the same meaning with theorem (\ref{pre_thm})
 \begin{thm}\label{thm_main}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$ be  $n\times n$ matrices.
 Assume that
@@ -233,7 +234,7 @@ if and only if
     \item \label{thm_main:equ_cond_a} $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
     \item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
     \item \label{thm_main:equ_cond_c} $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
-\end{enumerate} \qed
+\end{enumerate} %\qed
 \end{thm}
 % 
 
@@ -241,8 +242,8 @@ if and only if
 
 % {}
    
-\begin{pof}
-    The proof is based on Theorem~\ref{pre_thm} with $P = I$ and $Q = I + E_{kn}$ in (\ref{Q_1} ). 
+\begin{proof}
+    The proof is based on Theorem~\ref{pre_thm} with $P = I$ and $Q = I + E_{kn}$ in (\ref{Q_1}). 
     The assumption \ref{pre_thm_em1} $PCQ\leq PC'Q$ of Theorem~\ref{pre_thm} holds by the condition \ref{thm_main:condition_i} of this theorem. 
     Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition \ref{thm_main:condition_ii} and
      Lemma~\ref{lem:rt_vec}\ref{lem:rt_vec:en1}. Hence the assumption \ref{pre_thm_em2} of Theorem~\ref{pre_thm} holds. The assumptions \ref{pre_thm_em3} and \ref{pre_thm_em4}
@@ -250,36 +251,23 @@ if and only if
        $v'= Qu$  Hence $\lambda \leq \lambda' $ by the necessary condition of Theorem~\ref{pre_thm}. Moreover
         $\lambda = \lambda'$ if and only if \ref{pre0} holds, and this is equivalent to
          conditions \ref{thm_main:equ_cond_a},\ref{thm_main:equ_cond_b},\ref{thm_main:equ_cond_c} of this theorem. 
-\end{pof}   
+\end{proof}   
     
 We are interested in the matrices $C'$ that have $k$-rooted eigenvectors.
 Motivated by the condition (i) of theorem 2.3, we provide the following two definitions. 
-
-\begin{defn}[(k,n)-sum]
-    For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)-sum$ vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
+This is the definition of (k,n)-sum.
+\begin{defn}
+    For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-sum vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
 \end{defn}
 
-Note that the last column of $C'Q$ is the $(k, n)-sum$ vector of $C'$
-
-\begin{defn}[k-rooted matrix]\label{m_rooted}
-    A  matrix $C'=(c'_{ij})$ is called $k-rooted$  if its  columns and its $(k, n)-sum$ vector are all $k-rooted$ except the last column of $C'$.
+Note that the last column of $C'Q$ is the $(k, n)$-sum vector of $C'$
+Below is the definition of k-rooted matrix.
+\begin{defn}\label{m_rooted}
+    A  matrix $C'=(c'_{ij})$ is called $k-rooted$  if its  columns and its $(k, n)$-sum vector are all $k-rooted$ except the last column of $C'$.
 \end{defn}
 
-The following theorem shows that a $k$-rooted matrix has a $k$-rooted eigenvector.
-\begin{lem}\label{lma_m_rooted}
-    Let $C'=(c'_{ij})$ be an $n\times n$ nonnegative matrix. Then the following (i)-(iii) hold.
-        \begin{enumerate}[label=(\roman*)]
-            \item $C'$ is a $k$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
-            \item Assume that $C'$ is $k$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$
-                for $\rho(C')$. Then  $C'$ has a $k$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
-            \item $\rho(C')$ = $\rho(Q^{-1}C'Q)$
-        \end{enumerate}
-\end{lem}
 
-% 
-
-
-    \begin{rem}
+\begin{rem}
 
     $$Q^{-1}=I-E_{kn}=\begin{pmatrix}
     1 &  & & &  & 0 \\
@@ -301,7 +289,19 @@ The following theorem shows that a $k$-rooted matrix has a $k$-rooted eigenvecto
     c'_{n1}             & c'_{n2} & \cdots             & c'_{n\ n-1} & c'_{nk}+c'_{nn} \\
     \end{pmatrix}.
     $$
-    \end{rem}
+\end{rem}
+
+The following theorem shows that a $k$-rooted matrix has a $k$-rooted eigenvector.
+\begin{lem}\label{lma_m_rooted}
+    Let $C'=(c'_{ij})$ be an $n\times n$ nonnegative matrix. Then the following (i)-(iii) hold.
+        \begin{enumerate}[label=(\roman*)]
+            \item $C'$ is a $k$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
+            \item Assume that $C'$ is $k$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$
+                for $\rho(C')$. Then  $C'$ has a $k$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
+            \item $\rho(C')$ = $\rho(Q^{-1}C'Q)$
+        \end{enumerate}
+\end{lem}
+  
 
 \begin{comment}
 
@@ -318,33 +318,28 @@ The following theorem shows that a $k$-rooted matrix has a $k$-rooted eigenvecto
         \end{pmatrix},$$
 \end{rem}
 \end{comment}   
+\begin{proof}
+    (i)
+    and $Q^{-1}C'Q$ is
+    $$\begin{pmatrix}
+    c'_{11}     & c'_{12} & \cdots     & c'_{1\ n-1} & c'_{1k}+c'_{1n} \\
+    \vdots \\
+    c'_{k-11}     & c'_{k-1 2}           & \cdots     & c'_{k-1 n-1} & c'_{k-1k}+c'_{k-1n} \\
+    c'_{k1}-c'_{n1} & c'_{k2}-c'_{n2} &\cdots      &c'_{kn-1}-c'_{nk-1}& c'_{kk}+c'_{kn}-c'_{nk}-x'_{nn}\\
+    c'_{k+11}     & c'_{k+12}           & \cdots     & c'_{k+1\ n-1} & c'_{k+1k}+c'_{k+1n} \\
+    \vdots              & \vdots & \ddots              & \vdots & \vdots \\
+    c'_{n1}             & c'_{n2} & \cdots             & c'_{n\ n-1} & c'_{nk}+c'_{nn} \\
+    \end{pmatrix}.$$
+    (ii)
+        By Lemma~\ref{lem:rt_vec} $v'=Qu$ is $k$-rooted.  
+        Since $Q^{-1}C'Qu=\rho(C')u$ by the assumption, we have
+        $Q^{-1} C' Q u  = Q^{-1} \rho(C') Qu  =\rho(C')u$  \\
+        $C'Qu=\rho(C')Qu$.
 
+    (iii)
+    Since $C'$ and $Q^{-1}C'Q$ have the same set of eigenvalues, clearly $\rho(C')$ = $\rho(Q^{-1}C'Q)$.
 
-
-    \begin{pof}
-        and $Q^{-1}C'Q$ is
-        $$\begin{pmatrix}
-        c'_{11}     & c'_{12} & \cdots     & c'_{1\ n-1} & c'_{1k}+c'_{1n} \\
-        \vdots \\
-        c'_{k-11}     & c'_{k-1 2}           & \cdots     & c'_{k-1 n-1} & c'_{k-1k}+c'_{k-1n} \\
-        c'_{k1}-c'_{n1} & c'_{k2}-c'_{n2} &\cdots      &c'_{kn-1}-c'_{nk-1}& c'_{kk}+c'_{kn}-c'_{nk}-x'_{nn}\\
-        c'_{k+11}     & c'_{k+12}           & \cdots     & c'_{k+1\ n-1} & c'_{k+1k}+c'_{k+1n} \\
-        \vdots              & \vdots & \ddots              & \vdots & \vdots \\
-        c'_{n1}             & c'_{n2} & \cdots             & c'_{n\ n-1} & c'_{nk}+c'_{nn} \\
-        \end{pmatrix}.$$
-    \end{pof}
-
-    \begin{pof}
-        (ii)
-            By Lemma~\ref{lem:rt_vec} $v'=Qu$ is $k$-rooted.  
-            Since $Q^{-1}C'Qu=\rho(C')u$ by the assumption, we have
-            $Q^{-1} C' Q u  = Q^{-1} \rho(C') Qu  =\rho(C')u$  \\
-            $C'Qu=\rho(C')Qu$.
-
-        (iii)
-        Since $C'$ and $Q^{-1}C'Q$ have the same set of eigenvalues, clearly $\rho(C')$ = $\rho(Q^{-1}C'Q)$.
-
-    \end{pof}
+\end{proof}
 
 
 \begin{lem}\label{l_diag}   %end of label
@@ -358,7 +353,7 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
     $r'_k \geq r'_n$. Moreover choose $c'_{in}:=r'_i-c'_{ik}$. Then $\rho(C)\leq \rho(C')$, when $C'=(c'_{ij})$.
 \end{thm}
 
-\begin{pof}
+\begin{proof}
     These assumptions are necessary that $PCQ \leq PC'Q$, and C' is $k$-rooted,based on
     (\ref{lma_m_rooted});\\
     calculation:  \\
@@ -367,8 +362,8 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
      a $k$-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same
       eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the
        conditions of \ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and
-        then $\rho(C') \geq \rho(C)$  \qed
-\end{pof}
+        then $\rho(C') \geq \rho(C)$  %\qed
+\end{proof}
 
 
 \subsection{Example}
@@ -425,7 +420,7 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
 
     
 
-\section{References}
+%\section*{References}
 \begin{thebibliography}{20}
 \normalsize
 \addcontentsline{toc}{chapter}{Bibliography}
@@ -433,9 +428,6 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
 \bibitem{chang}
 Yen-Jen Cheng, {\it  A matrix realization of spectral bounds
 of the spectral radius of a nonnegative matrix}, Ph.D. Thesis, NCTU, 2018.
-
-\bibitem{content}
-Just as before, {\it What a book}, Fuckes, 2020.
 
 \bibitem{prn_fros1}
 A. E. Brouwer, W. H. Haemers, {\it Spectra of graphs}, Springer, 2012
