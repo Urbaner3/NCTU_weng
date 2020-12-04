@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  3 DEC 2020 17:26
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  4 DEC 2020 17:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -485,8 +485,7 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 \c@thm=\count305
-
-No file introduction&front.aux.
+ (./introduction&front.aux)
 \openout1 = `introduction&front.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -499,7 +498,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 61.
-(c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 61.
@@ -579,28 +578,23 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 90.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-] [2] [1] [2]
-No file introduction&front.toc.
+] [2] [1] [2] (./introduction&front.toc)
 \tf@toc=\write4
 \openout4 = `introduction&front.toc'.
 
-[3
+ [3
 
 ]
 Chapter 1.
 [1
 
-] (./introduction&front.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./introduction&front.aux) ) 
 Here is how much of TeX's memory you used:
- 17369 strings out of 479682
- 403039 string characters out of 5892022
- 669830 words of memory out of 5000000
- 34336 multiletter control sequences out of 15000+600000
- 539324 words of font info for 64 fonts, out of 8000000 for 9000
+ 17386 strings out of 479682
+ 403817 string characters out of 5892022
+ 669844 words of memory out of 5000000
+ 34348 multiletter control sequences out of 15000+600000
+ 539332 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  52i,6n,60p,487b,232s stack positions out of 5000i,500n,10000p,200000b,80000s
 

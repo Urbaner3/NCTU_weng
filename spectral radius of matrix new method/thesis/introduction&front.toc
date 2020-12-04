@@ -1,3 +1,0 @@
-\contentsline {chapter}{Abstract (in Chinese)}{i}%
-\contentsline {chapter}{Abstract (in English)}{ii}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}%
