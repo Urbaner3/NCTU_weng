@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  12 NOV 2020 10:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  18 NOV 2020 15:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article110320.tex"
-(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article110320.tex
+**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article111720.tex"
+(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article111720.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-06> (c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -510,9 +510,8 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 \c@thm=\count309
  (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
- Excluding comment 'comment')
-No file article110320.aux.
-\openout1 = `article110320.aux'.
+ Excluding comment 'comment') (./article111720.aux)
+\openout1 = `article111720.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
@@ -524,7 +523,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 66.
-(c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 66.
@@ -604,103 +603,84 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
-LaTeX Warning: Citation `chang' on page 1 undefined on input line 94.
+LaTeX Warning: Citation `prn_fros1' on page 1 undefined on input line 85.
 
 
-LaTeX Warning: Citation `content' on page 1 undefined on input line 134.
+LaTeX Warning: Citation `chang' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `prn_fros2' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `chang' on page 1 undefined on input line 135.
 
 [1
 
-]
+] [2]
 
-LaTeX Warning: Reference `pre_thm' on page 2 undefined on input line 156.
-
-
-LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 157.
+LaTeX Warning: Reference `thm_main:condition_i' on page 3 undefined on input line 245.
 
 
-LaTeX Warning: Reference `pre_thm_em1' on page 2 undefined on input line 158.
+LaTeX Warning: Reference `thm_main:condition_ii' on page 3 undefined on input line 246.
 
 
-LaTeX Warning: Reference `pre_thm_em3' on page 2 undefined on input line 163.
+LaTeX Warning: Reference `lem:rt_vec' on page 3 undefined on input line 247.
 
 
-LaTeX Warning: Reference `pre1' on page 2 undefined on input line 163.
+LaTeX Warning: Reference `lem:rt_vec:en1' on page 3 undefined on input line 247.
 
 
-LaTeX Warning: Reference `pre_thm_em4' on page 2 undefined on input line 168.
+LaTeX Warning: Reference `thm_main:condition_iii' on page 3 undefined on input line 248.
 
 
-LaTeX Warning: Reference `pre2' on page 2 undefined on input line 170.
+LaTeX Warning: Reference `thm_main:condition_iv' on page 3 undefined on input line 248.
 
 
-LaTeX Warning: Reference `pre0' on page 2 undefined on input line 173.
+LaTeX Warning: Reference `thm_main:equ_cond_a' on page 3 undefined on input line 251.
 
 
-LaTeX Warning: Reference `pre2' on page 2 undefined on input line 174.
-
-[2]
-
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 218.
+LaTeX Warning: Reference `thm_main:equ_cond_b' on page 3 undefined on input line 251.
 
 
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 245.
+LaTeX Warning: Reference `thm_main:equ_cond_c' on page 3 undefined on input line 251.
+
+[3] Excluding 'comment' comment. [4]
+
+LaTeX Warning: Reference `lem:rt_vec' on page 5 undefined on input line 332.
 
 
-LaTeX Warning: Reference `Q_1' on page 3 undefined on input line 245.
+LaTeX Warning: Reference `lma_m_rooted' on page 5 undefined on input line 356.
 
 
-LaTeX Warning: Reference `pre_thm_em1' on page 3 undefined on input line 246.
+LaTeX Warning: Reference `l_diag' on page 5 undefined on input line 359.
 
 
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 246.
+LaTeX Warning: Reference `thm_main' on page 5 undefined on input line 362.
 
 
-LaTeX Warning: Reference `thm_main:condition_i' on page 3 undefined on input line 246.
+Underfull \hbox (badness 10000) in paragraph at lines 355--364
+
+ []
+
+[5]
+
+LaTeX Warning: Reference `thm_main' on page 6 undefined on input line 382.
+
+[6] (./article111720.aux)
+
+LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Reference `thm_main:condition_ii' on page 3 undefined on input line 247.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
+ ) 
+Here is how much of TeX's memory you used:
+ 17905 strings out of 479682
+ 409453 string characters out of 5892022
+ 693264 words of memory out of 5000000
+ 34852 multiletter control sequences out of 15000+600000
+ 537516 words of font info for 57 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 52i,12n,60p,539b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-LaTeX Warning: Reference `lem:rt_vec' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `lem:rt_vec:en1' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `pre_thm_em2' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `pre_thm_em3' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `pre_thm_em4' on page 3 undefined on input line 248.
-
-
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 249.
-
-
-LaTeX Warning: Reference `thm_main:condition_iii' on page 3 undefined on input line 249.
-
-
-LaTeX Warning: Reference `thm_main:condition_iv' on page 3 undefined on input line 249.
-
-
-LaTeX Warning: Reference `pre_thm' on page 3 undefined on input line 250.
-
-
-LaTeX Warning: Reference `pre0' on page 3 undefined on input line 251.
-
-
-LaTeX Warning: Reference `thm_main:equ_cond_a' on page 3 undefined on input line 252.
-
-
-LaTeX Warning: Reference `thm_main:equ_cond_b' on page 3 undefined on input line 252.
-
-
-LaTeX Warning: Reference `thm_main:equ_cond_c' on page 3 undefined on input line 252.
-
-[3
+Output written on article111720.pdf (6 pages).

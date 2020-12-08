@@ -1,0 +1,169 @@
+\documentclass{article}
+
+\topmargin 0pt
+
+\topmargin=-1.5cm
+\oddsidemargin=0.7cm
+\textheight=23.5cm
+\textwidth=15cm
+\setlength{\baselineskip}{24pt}
+\renewcommand{\baselinestretch}{1.5} %行距
+
+
+
+
+\usepackage{fontspec}   %加這個就可以設定字體
+\usepackage{xeCJK}       %讓中英文字體分開設置
+%\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{ulem}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{tabularx,array}
+\usepackage{pgf,tikz}
+ \usepackage{blkarray} %line 80-92 Q formula matrix index
+%\usepackage{colortbl}
+\usepackage{enumitem}% enumerate labels   roman
+\usetikzlibrary{arrows}
+\setCJKmainfont{標楷體} %設定中文為系統上的字型，而英文不去更動，使用原TeX字型
+\XeTeXlinebreaklocale "zh"             %這兩行一定要加，中文才能自動換行
+\XeTeXlinebreakskip = 0pt plus1pt     %這兩行一定要加，中文才能自動換行
+\title{Combinatorial Identities from Lagrange's Interpolation Polynomial}
+\author{Student: Yen-Jung Huang  ~~~~~~~~~~~~~~~~~~~~~~~~~~Advisor: Chih-Wen Weng}
+\date{} %不要日期
+
+\def\UrlFont{\rm}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{eg}[thm]{Example}
+\newtheorem{conj}[thm]{Conjecture}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{ex}[thm]{Exercise}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{nota}[thm]{Notation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{ques}[thm]{Question}
+% \newtheorem{pof}[thm]{Proof.}
+
+\usepackage{comment}
+
+%\renewcommand {\refname} {Bibliography}
+
+
+
+\begin{document}
+
+\begin{thm}\label{pre_thm}
+    Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
+Assume that
+\begin{enumerate}[label=(\roman*)]
+    \item \label{pre_thm_em1}  $PCQ\leq PC'Q$;
+    \item \label{pre_thm_em2} there exist a nonnegative column vector $u=(u_1, u_2, \ldots, u_n)^T$  and a
+    scalar $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with
+    associated eigenvector $Qu$;
+    \item \label{pre_thm_em3}  there exist a nonnegative row vector $v^T=(v_1, v_2, \ldots, v_n)$  and a scalar
+    $\lambda\in \mathbb{R}$such that $\lambda$ is an eigenvalue of $C$ with associated  left
+    eigenvector $v^TP$; and
+    \item \label{pre_thm_em4} $v^TPQu>0.$
+\end{enumerate}
+    Then $\lambda\leq \lambda'$. Moreover, $\lambda=\lambda'$ if and only if
+    \begin{equation}\label{pre0}
+        (PC'Q)_{ij}=(PCQ)_{ij}\qquad \hbox{for~}1\leq i, j\leq n \hbox{~with~} v_i\ne 0 \hbox{~and~} u_j\ne 0.
+    \end{equation}
+\end{thm}
+
+\section{Our Method}
+We use [n-1] as notation of the set of elements from one to n-1, which is {1,2,$...$,n}.
+Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ appearing in the position $k,n$ of $E_{kn}$. We will apply the previous theorem \ref{pre_thm} with $P=I$ and 
+\begin{lem}\label{lma_m_rooted}
+    Let $C'=(c'_{ij})$ be an $n\times n$ nonnegative matrix. Then the following (i)-(iii) hold.
+        \begin{enumerate}[label=(\roman*)]
+            \item $C'$ is a $k$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
+            \item Assume that $C'$ is $k$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$
+                for $\rho(C')$. Then  $C'$ has a $k$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
+            \item $\rho(C')$ = $\rho(Q^{-1}C'Q)$
+        \end{enumerate}
+\end{lem}
+  
+\begin{lem}\label{l_diag}   %end of label
+    If a square matrix $C'$ has a rooted eigenvector for $\lambda'$, then $C'+dI$ also has
+    the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is the identity matrix with the same size of $C'$.
+    \end{lem}
+
+\begin{thm}\label{thm_main}
+    Let $C=(c_{ij})$, $C'=(c'_{ij})$ be  $n\times n$ matrices.
+    Assume that
+    \begin{enumerate}[label=(\roman*)]
+    \item \label{thm_main:condition_i} $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
+    \item \label{thm_main:condition_ii} there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+    such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+    \item \label{thm_main:condition_iii}there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+    \item \label{thm_main:condition_iv}$v^Tv'>0.$
+    \end{enumerate}
+     Then $\lambda\leq \lambda'$.
+    Moreover, $\lambda=\lambda'$
+    if and only if
+    \begin{enumerate}[label=(\alph*)]
+        \item \label{thm_main:equ_cond_a} $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
+        \item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
+        \item \label{thm_main:equ_cond_c} $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$ 
+    \end{enumerate} %\qed
+\end{thm}
+
+\begin{thm}
+    Let $C$ be an $n\times n$ nonnegative matrix. For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$
+    such that $c'_{ij}\geq c_{ij}$ and $c'_{kj}\geq c'_{nj}>0$, and choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$, and
+    $r'_k \geq r'_n$. Moreover choose $c'_{in}:=r'_i-c'_{ik}$. Then $\rho(C)\leq \rho(C')$, when $C'=(c'_{ij})$.
+\end{thm}
+
+\begin{proof}
+    These assumptions are necessary that $PCQ \leq PC'Q$, and C' is $K$-rooted,based on Lemma
+    (\ref{lma_m_rooted});\\
+    where $Q^{-1}C'Q$ = 
+    $$\begin{pmatrix}
+    c'_{11}     & c'_{12} & \cdots     & c'_{1\ n-1} & c'_{1k}+c'_{1n} \\
+    \vdots \\
+    c'_{k-11}     & c'_{k-1 2}           & \cdots     & c'_{k-1 n-1} & c'_{k-1k}+c'_{k-1n} \\
+    c'_{k1}-c'_{n1} & c'_{k2}-c'_{n2} &\cdots      &c'_{kn-1}-c'_{nk-1}& c'_{kk}+c'_{kn}-c'_{nk}-c'_{nn}\\
+    c'_{k+11}     & c'_{k+12}           & \cdots     & c'_{k+1\ n-1} & c'_{k+1k}+c'_{k+1n} \\
+    \vdots              & \vdots & \ddots              & \vdots & \vdots \\
+    c'_{n1}             & c'_{n2} & \cdots             & c'_{n\ n-1} & c'_{nk}+c'_{nn} \\
+    \end{pmatrix}.$$
+    $Q^{-1}C'Q \geq 0$ for that $c'_{kj}\geq c'_{nj}>0$ when $1\leq j\leq n-1$ , $c'_{ij}\geq c_{ij}$ where $C$ is nonnegative,
+    and the last column $c'_{in}+c'_{ik}=r'_i \geq c_{in}+c_{ik}$ by assumption $r'_i\geq c_{ik}+c_{in}$\\2ed
+
+    For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$ such that $c'_{ij}\geq c_{ij}$, \\
+    which implies $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ \\
+    And under the same condition for $i$ and $j$, choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$, \\
+    which implies $c_{ik}+c_{in}\leq c'_{ik}+c'_{in} = r'_i$ \\2ed
+    C' is $K$-rooted matrix, then by Lemma (\ref{lma_m_rooted}), there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+    such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+
+    \begin{enumerate}[label=(\roman*)]
+        \item \label{thm_main:condition_i} $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
+        \item \label{thm_main:condition_ii} there exists a $k$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+        such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+        \item \label{thm_main:condition_iii}there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+        \item \label{thm_main:condition_iv}$v^Tv'>0.$
+        \end{enumerate}
+    by \ref{l_diag}, For certain d, if $C'+dI$ is $k$-rooted, then it has
+     a $k$-rooted eigenvector with its spectral radius $\lambda + d$. C' would share the same
+      eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the
+       conditions of \ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and
+        then $\rho(C') \geq \rho(C)$  %\qed
+\end{proof}
+
+
+\end{document}
