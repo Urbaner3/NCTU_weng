@@ -1,9 +1,27 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  6 OCT 2020 10:15
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex"
+(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex
+========
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  6 NOV 2020 16:21
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex"
+(c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/our_result.tex
+>>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+=======
 This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.24)  6 NOV 2020 15:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **"c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex"
 (c:/Users/USER/Documents/NCTU_weng/spectral radius of matrix new method/thesis/preliminiaries.tex
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-06> (c:/texlive/2020/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
@@ -130,10 +148,22 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_verb_case_int=\count268
 \l__xeCJK_verb_exspace_skip=\skip55
  (c:/texlive/2020/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+<<<<<<< HEAD
+<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
+File: xeCJK.cfg 2020/06/06 v3.8.4 Configuration file for xeCJK package
+)) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+========
+File: xeCJK.cfg 2020/08/23 v3.8.5 Configuration file for xeCJK package
+)) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+>>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+=======
 File: xeCJK.cfg 2020/08/23 v3.8.5 Configuration file for xeCJK package
 )) (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
  Excluding comment 'comment') (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -457,6 +487,39 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@expandcount=\count304
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+<<<<<<< HEAD
+<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
+))) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen294
+========
+))) (c:/texlive/2020/texmf-dist/tex/latex/blkarray/blkarray.sty
+Package: blkarray 2015/02/27 v0.07 Block array (dpc)
+\c@BAenumi=\count305
+\BA@col=\count306
+\BA@block@cnt=\count307
+\BA@final@box=\box65
+\BA@first@box=\box66
+\BA@colsep=\dimen294
+\BA@ftn=\toks43
+\BAextrarowheight=\dimen295
+\BAextraheightafterhline=\dimen296
+\BAarrayrulewidth=\dimen297
+\BAdoublerulesep=\dimen298
+\BAfootskip=\dimen299
+\BA@dashbox=\box67
+\BA@ddashbox=\box68
+) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen300
+\enit@toks=\toks44
+\enit@inbox=\box69
+\enit@count@id=\count308
+\enitdp@description=\count309
+=======
 ))) (c:/texlive/2020/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip65
@@ -465,11 +528,17 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box65
 \enit@count@id=\count305
 \enitdp@description=\count306
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 ) (c:/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (c:/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+<<<<<<< HEAD
+\arrowsize=\dimen301
+>>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+=======
 \arrowsize=\dimen295
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 ))
 
 Package fontspec Info: Could not resolve font "標楷體/BI" (it probably doesn't
@@ -494,6 +563,51 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 (fontspec)             <->"標楷體/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
+\c@thm=\count304
+ (./preliminiaries.aux)
+\openout1 = `preliminiaries.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 62.
+========
+\c@thm=\count310
+ (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write4
+ Excluding comment 'comment') (./our_result.aux)
+\openout1 = `our_result.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 67.
+>>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+=======
 \c@thm=\count307
 
 No file preliminiaries.aux.
@@ -519,12 +633,76 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+<<<<<<< HEAD
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 67.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 67.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 67.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 67.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 67.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 67.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 67.
+LaTeX Font Info:    Redeclaring math accent \check on input line 67.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 67.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 67.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 67.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 67.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 67.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 67.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 67.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 67.
+ ABD: EveryShipout initializing macros
+Chapter 1.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+(c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 72.
+=======
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 63.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 63.
 LaTeX Font Info:    Redeclaring math accent \grave on input line 63.
@@ -586,11 +764,59 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67.
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
  (c:/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 
+<<<<<<< HEAD
+]
+Overfull \hbox (35.0297pt too wide) in paragraph at lines 147--148
+[]\TU/lmr/bx/n/12 Lemma 1.0.4. []\TU/lmr/m/it/12 If $\OML/cmm/m/it/12 u \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; u[]; [] ; u[]\OT1/cmr/m/n/12 )[]$ \TU/lmr/m/it/12 and $\OML/cmm/m/it/12 v[] \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 v[]; v[]; [] ; v[]\OT1/cmr/m/n/12 ) := \OML/cmm/m/it/12 Qu \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 u[]; [] ; u[]; u[] \OT1/cmr/m/n/12 +
+ []
+
+<<<<<<<< HEAD:spectral radius of matrix new method/thesis/preliminiaries.log
+LaTeX Warning: Citation `'content'' on page 2 undefined on input line 105.
+
+Excluding 'comment' comment.
+
+LaTeX Warning: Citation `chang' on page 2 undefined on input line 123.
+
+[2] [3] (./preliminiaries.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 17367 strings out of 479277
+ 400660 string characters out of 5883835
+ 672087 words of memory out of 5000000
+ 34719 multiletter control sequences out of 15000+600000
+ 538512 words of font info for 65 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 52i,12n,60p,487b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on preliminiaries.pdf (3 pages).
+========
+[2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 260--269
+
+ []
+
+[5] [6] (./our_result.aux) ) 
+Here is how much of TeX's memory you used:
+ 18009 strings out of 479682
+ 410371 string characters out of 5892022
+ 689846 words of memory out of 5000000
+ 34946 multiletter control sequences out of 15000+600000
+ 542655 words of font info for 78 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 52i,9n,60p,555b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on our_result.pdf (6 pages).
+>>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59:spectral radius of matrix new method/thesis/our_result.log
+=======
 ] Excluding 'comment' comment.
 
 LaTeX Warning: Reference `pre_thm' on page 2 undefined on input line 153.
@@ -638,3 +864,4 @@ Here is how much of TeX's memory you used:
  52i,12n,60p,530b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on preliminiaries.pdf (3 pages).
+>>>>>>> 0c549c4d148b4bf58b49f412c88bcad8f5342e59
