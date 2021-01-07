@@ -168,7 +168,9 @@ Hsinchu, Taiwan, Republic of China \bigskip \medskip
 \end{center}
  \bigskip
 
- 矩陣的譜半徑為其特徵值絕對值的最大值，而一有向圖的譜半徑則定義為其鄰接矩陣之譜半徑。本論文給出一個尋找方陣譜半徑上界的方法，將此方法應用於有向圖的鄰接矩陣，我們可以簡易估算出此圖的譜半徑。
+ 矩陣的譜半徑為其特徵值絕對值的最大值，而一有向圖的譜半徑則定義為其鄰接矩陣之
+ 譜半徑。本論文給出一個尋找方陣譜半徑上界的方法，將此方法應用於有向圖的鄰接矩
+ 陣，我們可以簡易估算出此圖的譜半徑。
  \\
 \bigskip
 
@@ -196,7 +198,11 @@ National~ Chiao ~Tung~ University
 
 %\begin{abstract}
 \addcontentsline{toc}{section}{Abstract (in English)}
-The spectral radius of a square matrix is the largest magnitude of its eigenvalues. And the spectral radius of a directed graph is defined as the spectral radius of the corresponding adjacency matrix. In this paper, we give an approach to obtain an upper bound for the spectral radius of a square matrix. By applying this method on the adjacency matrix of a directed graph, we can estimate the spectral radius of this directed graph simply.
+The spectral radius of a square matrix is the largest magnitude of its eigenvalues. And the
+ spectral radius of a directed graph is defined as the spectral radius of the corresponding
+ adjacency matrix. In this paper, we give an approach to obtain an upper bound for the
+ spectral radius of a square matrix. By applying this method on the adjacency matrix of a
+ directed graph, we can estimate the spectral radius of this directed graph simply.
 
 \bigskip
 
@@ -221,11 +227,22 @@ The spectral radius of a square matrix is the largest magnitude of its eigenvalu
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%
 
-Let $\mathbb{R}$ and $\mathbb{C}$ denote the field of real numbers and complex numbers, respectively. Let $C$ be an $n\times n$ real square matrix. If there is a nonzero column vector $u\in\mathbb{R}^n$ such that $Cu=\lambda u$ for some scalar $\lambda\in\mathbb{C}$, then the scalar $\lambda$ is called the eigenvalue of $C$ with corresponding eigenvector $u$. And the spectral radius of a matrix $C$ is the largest magnitude (or complex modulus) of its eigenvalues, denoted by $\rho(C)$. We are interested in the spectral radius of the following matrix associated with a simple directed graph.
+Let $\mathbb{R}$ and $\mathbb{C}$ denote the
+ field of real numbers and complex numbers, respectively.
+ Let $C$ be an $n\times n$ real square matrix. If there is
+ a nonzero column vector $u\in\mathbb{R}^n$ such that
+ $Cu=\lambda u$ for some scalar $\lambda\in\mathbb{C}$,
+ then the scalar $\lambda$ is called the eigenvalue of
+ $C$ with corresponding eigenvector $u$. And the spectral
+ radius of a matrix $C$ is the largest magnitude (or complex
+ modulus) of its eigenvalues, denoted by $\rho(C)$. We are
+ interested in the spectral radius of the following matrix
+ associated with a simple directed graph.
 
 \begin{defn}
-    Given an directed graph $G$, the $\textit{adjacency matrix}$ of $G$ is the square
-    matrix $A = (a_{ij})$ indexed by vertices of $G$, and
+Given an directed graph $G$, the $\textit{adjacency matrix}$ of
+ $G$ is the square
+ matrix $A = (a_{ij})$ indexed by vertices of $G$, and
      \[a_{ij} =\begin{cases}
         1, \text{if $i$ is adjacent to $j$}, \\
         0, \text{otherwise.}
@@ -233,9 +250,17 @@ Let $\mathbb{R}$ and $\mathbb{C}$ denote the field of real numbers and complex n
      \]
 \end{defn}
 
-Given a directed graph $G$, the spectral radius of $G$ is the spectral radius of the adjacency matrix of $G$, denoted by $\rho(G)$. Note that the spectral radius $\rho(G)$ is independent of the ordering of the vertex set of $G$.
+Given a directed graph $G$, the spectral radius of $G$ is the
+ spectral radius of the adjacency matrix of $G$, denoted by
+ $\rho(G)$. Note that the spectral radius $\rho(G)$ is
+ independent of the ordering of the vertex set of $G$.
 
-The spectral radius is an important indicator to specify the relation of connected vertices in a graph, so it is meaningful to find a simple method to estimate the spectral radius. A simple and excellent executable method to estimate the spectral radius has some features, first, the bios is minimized, and second, there must be a way to prove it sensible. Enumerate these factors and prove it correctly would make this method reliable.
+The spectral radius is an important indicator to specify the relation
+ of connected vertices in a graph, so it is meaningful to find a simple
+ method to estimate the spectral radius. A simple and excellent
+ executable method to estimate the spectral radius has some features,
+ first, the bios is minimized, and second, there must be a way to prove
+ it sensible. Enumerate these factors and prove it correctly would make this method reliable.
 
 In \cite{chang}, Cheng and Weng give many bounds of the spectral radius of a nonnegative square matrix. And based on their theory and Perron-Frobenius theorem, we give another approach to obtain an upper bound of the spectral radius and apply it on the adjacency matrix of a directed graph.
 
@@ -252,7 +277,8 @@ The following is Perron–Frobenius theorem, which provides a feature of
     corresponding nonnegative left eigenvector.
 \end{thm}
 
-We introduce a notation of submatrix, which is taken from some columns and some rows of a matrix.
+We introduce a notation of submatrix, which is taken from some columns and some rows of a
+ matrix.
 
 \begin{defn}
     For a matrix $C=(c_{ij})$ and subsets $\alpha$, $\beta$ of row indices and column
@@ -261,7 +287,12 @@ We introduce a notation of submatrix, which is taken from some columns and some 
     and $j\in\beta$.
 \end{defn}
 
-Our theory is based on the following theorem, which is from \cite{chang}, and we introduce two square matrices $P$ and $Q$ in the following theorem first. The matrix $P$ is a permutation matrix which is multiplied to the left side, and the matrix $Q$ is the sum of an elementary matrix and a certain binary matrix. In which $P$ generalize row permutation on cases of $C$ matrix, and $Q$ is the transform from $C'$ to $C'$, which is the first $n-1$ columns and sum of certain columns. We aim to find $C'$ such that $C'$ majors $C$, i.e. $C\leq C'$.
+Our theory is based on the following theorem, which is from \cite{chang}, and we introduce two square matrices
+ $P$ and $Q$ in the following theorem first. The matrix $P$ is a permutation
+ matrix which is multiplied to the left side, and the matrix $Q$ is the sum of an elementary matrix and a
+ certain binary matrix. In which $P$ generalize row permutation on cases of $C$ matrix, and $Q$ is the transform
+ from $C'$ to $C'$, which is the first $n-1$ columns and sum of certain columns. We aim to find $C'$ such that
+ $C'$ majors $C$, i.e. $C\leq C'$.
 
 \begin{thm}\label{pre_thm}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be $n\times n$ matrices.
@@ -283,14 +314,17 @@ Assume that
 \end{thm}
 
 \begin{proof}
-    Multiplying the nonnegative vector $u$ in assumption~\ref{pre_thm_em2}, where $Qu$ is eigenvector of $C'$, to the right of both terms of
-    ~\ref{pre_thm_em1},
+    Multiplying the nonnegative vector $u$ in theorem~\ref{pre_thm}
+     assumption~\ref{pre_thm_em1},
+     where $Qu$ is eigenvector of $C'$, 
+     to the right of both terms of~\ref{pre_thm_em1},
     \begin{equation}\label{pre1}
        PCQu\leq PC'Qu=\lambda'PQu.
     \end{equation}
+
     Multiplying the nonnegative left eigenvector $v^T$ of $C$ for $\lambda$ in assumption
-     ~\ref{pre_thm_em3} to the left of all terms  in (\ref{pre1}), where $v^TP$ is
-    left eigenvector of $C$ for $\lambda$, thus we have
+     ~\ref{pre_thm_em3} to the left of all terms  in (\ref{pre1}),
+      where $v^TP$ is left eigenvector of $C$ for $\lambda$, thus we have
     \begin{equation}\label{pre2}
         \lambda v^TPQu=v^TPCQu\leq v^TPC'Qu=\lambda' v^TPQu.
     \end{equation}
@@ -307,6 +341,7 @@ Assume that
 \section{Our Method}
 %%%%%%%%%%%%%%%%%%%%
 
+
 We use $[n-1]$ as notation of the set of elements from one to $n-1$, which is $\{1,2,...,n-1\}$.
 Throughout fix $k\in [n-1]$, let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$
 appearing in the position $k,n$ of $E_{kn}$. Now we apply the previous Theorem \ref{pre_thm} with $P=I$ and
@@ -322,7 +357,6 @@ Q=I+E_{kn}=\begin{pmatrix}
 \end{pmatrix},
 \end{equation}
 so the matrix $PC'Q$ in assumption~\ref{pre_thm_em1} of Theorem~\ref{pre_thm} is
-
 \begin{equation}\label{PC'Q}
   PC'Q=\begin{pmatrix}
          c'_{11} & c'_{12} & \cdots &  c'_{1k}+c'_{1n} \\
@@ -331,7 +365,7 @@ so the matrix $PC'Q$ in assumption~\ref{pre_thm_em1} of Theorem~\ref{pre_thm} is
          c'_{n1} & c'_{n2} & \cdots &  c'_{nk}+c'_{nn}
        \end{pmatrix},
 \end{equation}
-where $c'_{ij}$ denote the $(i,j)$-entry of $C$.
+where $c'_{ij}$ denotes the $(i,j)$-entry of $C'$.
 
 
 
@@ -352,6 +386,7 @@ If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ld
 \end{enumerate}
 % \qed
 \end{lem}
+
 
 Below is our first result, in which the first condition implies the first $n-1$ columns of $C$ major to
  the columns of $C'$, and the $(k,n)$-sum column of $C$ is also major to $C'$. The second and the third condition
@@ -382,7 +417,7 @@ if and only if
 \begin{proof}
     The proof is based on Theorem~\ref{pre_thm} with $P = I$ and $Q = I + E_{kn}$ in (\ref{Q_1}).
     The assumption \ref{pre_thm_em1} $PCQ\leq PC'Q$ of Theorem~\ref{pre_thm} holds by the condition \ref{thm_main:condition_i} of this theorem.
-    Let $u = Q^{-1}v'$. Then u is nonnegative and $C'Qu = \lambda' Qu$ by the condition \ref{thm_main:condition_ii} and \ref{lem:rt_vec:en1} in
+    Let $u = Q^{-1}v'$. Then $u$ is nonnegative and $C'Qu = \lambda' Qu$ by the condition \ref{thm_main:condition_ii} and \ref{lem:rt_vec:en1} in
      Lemma~\ref{lem:rt_vec}. Hence the assumption \ref{pre_thm_em2} of Theorem~\ref{pre_thm} holds. The assumptions \ref{pre_thm_em3} and \ref{pre_thm_em4}
       of Theorem~\ref{pre_thm} clearly hold by conditions~\ref{thm_main:condition_iii}, \ref{thm_main:condition_iv} of this theorem since $P = I$ and
        $v'= Qu$. Hence $\lambda \leq \lambda' $ by the necessary condition of Theorem~\ref{pre_thm}. Moreover,
@@ -394,13 +429,15 @@ We are interested in the matrices $C'$ that have $K$-rooted eigenvectors.
 Motivated by the condition (i) of Theorem 2.3, we provide the following two definitions.
 This is the definition of $(k,n)$-sum.
 \begin{defn}
-    For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-sum vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
+    For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-sum vector of $C'$ is the vector
+     of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
 \end{defn}
 
 Note that the last column of $C'Q$ is the $(k, n)$-sum vector of $C'$.
 Below is the definition of $K$-rooted matrix.
 \begin{defn}\label{m_rooted}
-    A  matrix $C'=(c'_{ij})$ is called {\it $K$-rooted} if its first $n-1$ columns and its $(k,n)$-sum vector are all $K$-rooted.
+    A  matrix $C'=(c'_{ij})$ is called {\it $K$-rooted} if its
+     first $n-1$ columns and its $(k,n)$-sum vector are all $K$-rooted.
 \end{defn}
 
 
@@ -422,7 +459,7 @@ The following lemma shows that a $K$-rooted matrix has a $K$-rooted eigenvector.
         \begin{enumerate}[label=(\roman*)]
             \item \label{lma_m_rooted_cond1} $C'$ is a $K$-rooted matrix if and only if $Q^{-1}C'Q$ is nonnegative,
             \item \label{lma_m_rooted_cond2}Assume that $C'$ is $K$-rooted and let $u$ be the nonnegative eigenvector of $Q^{-1}C'Q$
-                corresponding to $\rho(C')$. Then  $C'$ has a $K$-rooted eigenvector $v'=Qu$ for $\rho(C')$,
+                corresponding to $\rho(C')$. Then $C'$ has a $K$-rooted eigenvector $v'=Qu$ for $\rho(C')$,
             \item \label{lma_m_rooted_cond3}$\rho(C')$ = $\rho(Q^{-1}C'Q)$.
         \end{enumerate}
 \end{lem}
@@ -454,6 +491,13 @@ The following lemma shows that a $K$-rooted matrix has a $K$-rooted eigenvector.
             \vdots              & \vdots & \ddots              & \vdots & \vdots \\
             c'_{n1}     & c'_{n2} & \cdots             & c'_{n (n-1)} & c'_{nk}+c'_{nn} \\
         \end{pmatrix},$$
+
+
+
+
+
+
+
 
         which is nonnegative if and only if $C'$ is $K$-rooted by the definition of nonnegative matrix and $K$-rooted matrix.
   \item[(ii)] By Lemma~\ref{lem:rt_vec}, $v'=Qu$ is $K$-rooted. Since $Q^{-1}C'Qu=\rho(C')u$ by the assumption, we have
@@ -489,11 +533,18 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
         \vdots              & \vdots & \ddots              & \vdots & \vdots \\
         c'_{n1}             & c'_{n2} & \cdots             & c'_{n (n-1)} & c'_{nk}+c'_{nn}
     \end{pmatrix}.$$
-    Then $Q^{-1}C'Q$ is nonnegative when $c'_{kj}\geq c'_{nj}>0$ for $1\leq j\leq n-1$ and $c'_{ij}\geq c_{ij}$, where $C$ is nonnegative, and the last column $c'_{in}+c'_{ik}=r'_i \geq c_{in}+c_{ik}$ by assumption $r'_i\geq c_{ik}+c_{in}$.
+    Then $Q^{-1}C'Q$ is nonnegative when $c'_{kj}\geq c'_{nj}>0$ for $1\leq j\leq n-1$ and $c'_{ij}\geq c_{ij}$, where $C$ is nonnegative,
+     and the last column $c'_{in}+c'_{ik}=r'_i \geq c_{in}+c_{ik}$ by assumption $r'_i\geq c_{ik}+c_{in}$.
 
-    For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$ such that $c'_{ij}\geq c_{ij}$, which implies $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$. And under the same condition for $i$ and $j$, choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$, which implies $c_{ik}+c_{in}\leq c'_{ik}+c'_{in} = r'_i$; $C'$ is $K$-rooted matrix, then by conditions \ref{lma_m_rooted_cond2} and \ref{lma_m_rooted_cond3} in Lemma~\ref{lma_m_rooted}, there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+    For $1\leq i \leq n$ and $1\leq j\leq n-1$, choose $c'_{ij}$ such that $c'_{ij}\geq c_{ij}$,
+    which implies $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$.
+    And under the same condition for $i$ and $j$, choose $r'_i$ such that $r'_i\geq c_{ik}+c_{in}$,
+    which implies $c_{ik}+c_{in}\leq c'_{ik}+c'_{in} = r'_i$;
+    $C'$ is $K$-rooted matrix, then by conditions \ref{lma_m_rooted_cond2} and \ref{lma_m_rooted_cond3} in Lemma~\ref{lma_m_rooted}, there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
     such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$.
-   Since $C$ is nonnegative, by Theorem~\ref{thm:Perron_Frobenius}, we claim there exists $v^T = w^{T}P$, such that $v^T$ is nonnegative left eigenvector of $C$, and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$.
+    Since $C$ is nonnegative, by Theorem~\ref{thm:Perron_Frobenius}, we claim there exists
+    $v^T = w^{T}P$, such that $v^T$ is nonnegative left eigenvector of $C$, and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$
+    is an eigenvalue of $C$ with associated left eigenvector $v^T$.
     Due to $v'$ and $v^T$ are nonnegative, $v^Tv'>0$, unless they are orthogonal, i.e, $v^Tv'=0$.
 
     Here we can summarize the facts we know so far as the following:
@@ -533,7 +584,9 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 0
     \end{pmatrix},$$
-    which satisfies the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$. Actually, both of the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have $\rho(C')-\rho(C)>0$ by calculating on computer.
+    which satisfies the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$.
+     Actually, both of the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have
+      $\rho(C')-\rho(C)>0$ by calculating on computer.
     Moreover, the corresponding directed graph of matrix $C'$ is, \cite[sage]{sage}
     \begin{center}
     \includegraphics{graph_Cprime.PNG}

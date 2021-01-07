@@ -88,7 +88,7 @@
 
 \bigskip
 
-{ \Huge A simple method on estimating spectral radius for some direted graphs}~\\~\\
+{ \Huge A simple method on estimating spectral radius for some directed graphs}~\\~\\
 ~\\~\\~\\~\\~\\
 \bigskip \bigskip\bigskip\bigskip\bigskip\bigskip
 \bigskip \bigskip\bigskip\bigskip\bigskip\bigskip
@@ -116,7 +116,7 @@
 {
 \Large
 有向圖譜半徑之簡易估算方法\\
-A simple method on estimating spectral radius for some direted graphs\\~\\
+A simple method on estimating spectral radius for some directed graphs\\~\\
 \begin{tabular}{lccr}
 Student: Ko-Han Chen  &&~~~& Advisor: Chih-Wen Weng\\
 研究生:陳科翰　 &&~~~& 指導教授：翁志文~教授
@@ -189,7 +189,7 @@ Hsinchu, Taiwan, Republic of China \bigskip \medskip
 
 %英文摘要
 \begin{center}{\LARGE
-A simple method on estimating spectral radius for some direted graphs
+A simple method on estimating spectral radius for some directed graphs
 \bigskip\bigskip\bigskip}
 
 { \large
@@ -257,8 +257,8 @@ of C corresponding to the $\it{eigenvector}$ $u,$  if $Cu = \lambda u.$
 We are interested in spectral radius of the following matrix associated with a simple graph.
 
 \begin{defn} 
-    Given an directed graph G, the$\textit{ adjacency matrix}$ of G is the square 
-    matrix $A = (a_{ij})$ indexed by vertices of G, and
+    Given an directed graph $G$, the$\textit{adjacency matrix}$ of $G$ is the square 
+    matrix $A = (a_{ij})$ indexed by vertices of $G$, and
      \[a_{ij} =\begin{cases} 
         1, \text{if $i$ is adjacent to $j$}, \\
         0, \text{otherwise.}
@@ -267,8 +267,8 @@ We are interested in spectral radius of the following matrix associated with a s
 \end{defn}
 
 \begin{defn}
-    Given a directed graph G, the $\textit{spectral radius}$  $\rho(G) $ of G is the spectral
-     radius of the adjacency matrix of G.
+    Given a directed graph $G$, the $\textit{spectral radius}$  $\rho(G) $ of G is the spectral
+     radius of the adjacency matrix of $G$.
 \end{defn}
 
 \section{Preliminaries}
@@ -276,7 +276,7 @@ We are interested in spectral radius of the following matrix associated with a s
 The next theorem is Perron–Frobenius Theorem, which provides a feature of
  nonnegative eigenvector to nonnegative matrices.
 \begin{thm} \cite{chang} \cite{prn_fros2} \label{thm:Perron_Frobenius}
-    If $C$ is nonnegative square matrix, then the spectral radius $\rho(C)$ is an
+    If $C$ is a nonnegative square matrix, then the spectral radius $\rho(C)$ is an
     eigenvalue of $C$ with a corresponding nonnegative right eigenvector and a
     corresponding nonnegative left eigenvector.
 \end{thm}
@@ -301,7 +301,7 @@ We introduce two matrices $P$ and $Q$ in the following Theorem, where $P$ is a p
 The following Theorem is from \cite{chang}.
 
 \begin{thm}\label{pre_thm}
-    Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be  $n\times n$ matrices.
+    Let $C=(c_{ij})$, $C'=(c'_{ij})$, $P$ and $Q$ be $n\times n$ matrices.
 Assume that
 \begin{enumerate}[label=(\roman*)]
     \item \label{pre_thm_em1}  $PCQ\leq PC'Q$;
@@ -321,7 +321,7 @@ Assume that
 
 \begin{proof}
     Multiplying the nonnegative vector $u$ in Theorem~\ref{pre_thm} assumption
-    ~\ref{pre_thm_em1}, where $Qu$ is eigenvector of $C'$,  to the right of both terms of
+    ~\ref{pre_thm_em1}, where $Qu$ is eigenvector of $C'$, to the right of both terms of
     ~\ref{pre_thm_em1},    
     \begin{equation}\label{pre1}
        PCQu\leq PC'Qu=\lambda'PQu.
@@ -342,8 +342,8 @@ Assume that
 \end{proof}
 
 \section{Our Method}
-We use $[n-1]$ as notation of the set of elements from one to $n-1$, which is ${1,2,...,n}$.
-Throughout fix $k\in [n-1]$.Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ 
+We use $[n-1]$ as notation of the set of elements from one to $n-1$, which is $\{1,2,...,n-1\}$.
+Throughout fix $k\in [n-1]$. Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$ 
 appearing in the position $k,n$ of $E_{kn}$. We will apply the previous Theorem \ref{pre_thm} with $P=I$ and 
 
 
@@ -365,7 +365,7 @@ Q=I+E_{kn}=\begin{pmatrix}
 
 
 \begin{defn}%[$K$-rooted vector]
-~A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $K$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
+A column vector $v'=(v'_1,v'_2,\ldots,v'_n)^T$ is called {\it $K$-rooted}  if $v'_{j} \geq 0$ for $1 \leq  j \leq n$ and $v'_k\geq v'_n.$
 \end{defn}
 \bigskip
 
@@ -375,16 +375,16 @@ The following Lemma is immediate from the above definition.%[vector rooted lemma
 \begin{lem}\label{lem:rt_vec}
 If $u=(u_1, u_2, \ldots, u_n)^T$ and $v'=(v'_1, v'_2, \ldots, v'_n):=Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$, then
 \begin{enumerate}[label=(\roman*)]
-\item \label{lem:rt_vec:en1}$v'$ is $K$-rooted  if and only if  $u$ is nonnegative;
+\item \label{lem:rt_vec:en1}$v'$ is $K$-rooted  if and only if $u$ is nonnegative;
 \item $u_k>0$ if and only if $v'_k>v'_n$.
 \end{enumerate}
 % \qed
 \end{lem}
 
-Below is our first result, in which the first condition implies the first n-1 columns of C major to
- the columns of C', and the (k,n)-sum column of C is also major to C'. The second and the third condition
- suggest that C and C' have nonnegative eigenvectors which are k-rooted. And the forth condition is simplier
-  but with the same meaning with Theorem (\ref{pre_thm})
+Below is our first result, in which the first condition implies the first $n-1$ columns of $C$ major to
+ the columns of $C'$, and the $(k,n)$-sum column of $C$ is also major to $C'$. The second and the third condition
+ suggest that $C$ and $C'$ have nonnegative eigenvectors which are $k$-rooted. And the forth condition is simpler
+  but with the same meaning with Theorem~(\ref{pre_thm})
 \begin{thm}\label{thm_main}
     Let $C=(c_{ij})$, $C'=(c'_{ij})$ be  $n\times n$ matrices.
 Assume that
@@ -420,15 +420,15 @@ if and only if
     
 We are interested in the matrices $C'$ that have $K$-rooted eigenvectors.
 Motivated by the condition (i) of Theorem 2.3, we provide the following two definitions. 
-This is the definition of (k,n)-sum.
+This is the definition of $(k,n)$-sum.
 \begin{defn}
     For an $n \times n$ matrix $C'=(c'_{ij})$, the $(k, n)$-sum vector of $C'$ is the vector of the sum of the $k$-th and  $n$-th columns of $C'$, where $k\leq n-1$.
 \end{defn}
 
-Note that the last column of $C'Q$ is the $(k, n)$-sum vector of $C'$
-Below is the definition of k-rooted matrix.
+Note that the last column of $C'Q$ is the $(k, n)$-sum vector of $C'$.
+Below is the definition of $k$-rooted matrix.
 \begin{defn}\label{m_rooted}
-    A  matrix $C'=(c'_{ij})$ is called $k-rooted$  if its  columns and its $(k, n)$-sum vector are all $K$-rooted except the last column of $C'$.
+    A  matrix $C'=(c'_{ij})$ is called $k-rooted$ if its columns and its $(k,n)$-sum vector are all $K$-rooted except the last column of $C'$.
 \end{defn}
 
 
@@ -456,21 +456,19 @@ Below is the definition of k-rooted matrix.
     $$
 \end{rem}
 
-The following Theorem shows that a $K$-rooted matrix has a $K$-rooted eigenvector.
+The following lemma shows that a $K$-rooted matrix has a $K$-rooted eigenvector.
 \begin{lem}\label{lma_m_rooted}
     Let $C'=(c'_{ij})$ be an $n\times n$ nonnegative matrix. Then the following (i)-(iii) hold.
         \begin{enumerate}[label=(\roman*)]
             \item \label{lma_m_rooted_cond1} $C'$ is a $K$-rooted matrix, if and only if, $Q^{-1}C'Q$ is nonnegative.
             \item \label{lma_m_rooted_cond2}Assume that $C'$ is $K$-rooted and let $u$ be a nonnegative eigenvector of $Q^{-1}C'Q$
-                for $\rho(C')$. Then  $C'$ has a $K$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
+                for $\rho(C')$. Then $C'$ has a $K$-rooted eigenvector $v'=Qu$ for $\rho(C')$. 
             \item \label{lma_m_rooted_cond3}$\rho(C')$ = $\rho(Q^{-1}C'Q)$
         \end{enumerate}
 \end{lem}
   
 
 \begin{comment}
-
-
 \begin{rem}
         (i) is immediate from Definition~\ref{m_rooted} and the observation that   
         $$Q^{-1}=I-E_{kn}=\begin{pmatrix}
@@ -519,7 +517,7 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
 \end{thm}
 
 \begin{proof}
-    These assumptions are necessary that $PCQ \leq PC'Q$ where $P = I$,$Q = I+E_{kn}$. And $C'$ is $K$-rooted,based on Lemma
+    These assumptions are necessary that $PCQ \leq PC'Q$ where $P=I$,$Q=I+E_{kn}$. And $C'$ is $K$-rooted,based on Lemma
      (\ref{lma_m_rooted}),\\
     $Q^{-1}C'Q$ = 
     $$\begin{pmatrix}
@@ -544,7 +542,7 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
     $v^T = w^{T}P$, such that $v^T$ is nonnegative left eigenvector of $C$, and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ 
     is an eigenvalue of $C$ with associated left eigenvector $v^T$; \\
     Due to $v'$ and $v^T$ are nonnegative, $v^Tv'>0.$, unless they are orthogonal, i.e, $v^Tv'=0$.\\[1ex]
-    Here we can summerize the facts we know so far as the following: \\
+    Here we can summarize the facts we know so far as the following: \\
     \begin{enumerate}[label=(\roman*)]
         \item  $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
         \item  there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
@@ -578,6 +576,10 @@ the same rooted eigenvector for $\lambda'+d,$ where $d$ is a constant and $I$ is
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 0
     \end{pmatrix}.$$
+
+
+
+
     also, graph,\cite[sage]{sage}\\
     \includegraphics{graph_Cprime.PNG} \\
     Check the conditions $C[[n]|[n-1]]  \leq C'[[n]|[n-1]] $ of Theorem~\ref{thm_main},
