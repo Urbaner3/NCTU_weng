@@ -397,9 +397,10 @@ Below is our first result, in which the first condition implies the first $n-1$ 
 Assume that
 \begin{enumerate}[label=(\roman*)]
 \item \label{thm_main:condition_i} $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
-\item \label{thm_main:condition_ii} there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
-such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
-\item \label{thm_main:condition_iii}there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+\item \label{thm_main:condition_ii} there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar
+ $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+\item \label{thm_main:condition_iii}there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar
+ $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
 \item \label{thm_main:condition_iv}$v^Tv'>0.$
 \end{enumerate}
  Then $\lambda\leq \lambda'$.
@@ -407,7 +408,7 @@ Moreover, $\lambda=\lambda'$
 if and only if
 \begin{enumerate}[label=(\alph*)]
     \item \label{thm_main:equ_cond_a} $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$ and $v'_n\not=0;$
-    \item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $with $v_i\ne 0 $;
+    \item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $ with $v_i\ne 0 $;
     \item \label{thm_main:equ_cond_c} $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$
 \end{enumerate} %\qed
 \end{thm}
@@ -547,12 +548,13 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     is an eigenvalue of $C$ with associated left eigenvector $v^T$.
     Due to $v'$ and $v^T$ are nonnegative, $v^Tv'>0$, unless they are orthogonal, i.e, $v^Tv'=0$.
 
-    Here we can summarize the facts we know so far as the following:
+    Here we can summarize the facts we know in theorem \ref{thm_main} so far as the following:
     \begin{enumerate}[label=(\roman*)]
         \item  $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
         \item  there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
         such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
-        \item there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+        \item there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$
+         such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
         \item $v^Tv'>0,$
     \end{enumerate}
     which come from Theorem~\ref{thm_main}.
@@ -561,7 +563,19 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     a $K$-rooted eigenvector with its spectral radius $\lambda + d$. $C'$ would share the same
     eigenvector with $C'+dI$ and has eigenvalue $\lambda$. So $C'+dI$ and $C+dI$ meet the
     conditions of Theorem~\ref{thm_main}, and we can show that $\rho(C' + dI) \geq \rho(C +dI)$ and
-    then $\rho(C') \geq \rho(C)$  %\qed
+    then $\rho(C') \geq \rho(C)$ 
+
+    As the same reason, we have $\lambda=\lambda'$ such case
+    if and only if
+    \begin{enumerate}[label=(\alph*)]
+        \item \label{thm_main:equ_cond_a} $c_{ik}+c_{in}=c'_{ik}+c'_{in} \qquad$  for $1\leq i\leq n$ with $v_i\not=0$
+         and $v'_n\not=0;$
+        \item \label{thm_main:equ_cond_b} $c'_{ij}=c_{ij}\qquad $for $1\leq i\leq n,~1\leq j\leq n-1, j \neq k $
+         with $v_i\ne 0 $;
+        \item \label{thm_main:equ_cond_c} $c'_{ik}=c_{ik} \qquad $  for $1\leq i \leq n$ and $ v'_{k}>v'_n$
+    \end{enumerate} %\qed
+
+
 \end{proof}
 
 
@@ -577,16 +591,73 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     \begin{center}
     \includegraphics{graph_C.PNG}
     \end{center}
-    we choose the matrix
+    we choose the matrix and fix $k = 3$
     $$C'=\begin{pmatrix}
     0 & 0 & 1 & 1\\
     1 & 0 & 1 & 0\\
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 0
     \end{pmatrix},$$
+<<<<<<< HEAD
     which satisfies the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$.
      Actually, both of the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have
       $\rho(C')-\rho(C)>0$ by calculating on computer.
+=======
+    Based on condition of theorem \ref{thm:conclusion},
+    \begin{enumerate}[label=(\roman*)]
+        \item  $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
+        \item  there exists a $K$-rooted vector $v'=(v'_1, v'_2, \ldots, v'_n)^T$ and a scalar $\lambda'\in \mathbb{R}$
+        such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+        \item there exists a nonnegative vector $v^T=(v_1, v_2, \ldots, v_n)$ and a scalar $\lambda\in \mathbb{R}$ 
+        such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+        \item $v^Tv'>0.$
+    \end{enumerate}
+    Here $n=4,k=3$ so rewrite the condition of theorem \ref{thm_main} as following:
+    \begin{enumerate}[label=(\roman*)]
+        \item  $C[[4]|[3]]\leq C'[[4]|[3]]$ and $c_{i3}+c_{i4}\leq c'_{i3}+c'_{i4}$ for all $1\leq i\leq 4$;
+        \item  there exists a $K$-rooted vector $v'=(v'_1, v'_2, v'_3, v'_4)^T$ and a scalar $\lambda'\in \mathbb{R}$
+        such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$;
+        \item there exists a nonnegative vector $v^T=(v_1, v_2, v_3, v_4)$ and a scalar $\lambda\in \mathbb{R}$ 
+        such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$;
+        \item $v^Tv'>0.$
+    \end{enumerate}
+    Then we check these conditions one by one,
+    \begin{enumerate}[label=(\roman*)]
+    \item 
+    $$C[[4]|[3]]=\begin{pmatrix}
+        0 & 0 & 1\\
+        1 & 0 & 0\\
+        1 & 1 & 0\\
+        1 & 1 & 1
+        \end{pmatrix},$$
+    $$C'[[4]|[3]]=\begin{pmatrix}
+        0 & 0 & 1\\
+        1 & 0 & 1\\
+        1 & 1 & 0\\
+        1 & 1 & 1
+        \end{pmatrix},$$
+    thus,$C[[4]|[3]]\leq C'[[4]|[3]].$
+    Write $c_{i3}+c_{i4}$ and $c'_{i3}+c'_{i4}$, for $1\leq i\leq 4$, as two row vectors $v_c$ and $v_{c'}$.
+    $v_c = (s_1, s_2, s_3, s_4), s_i = c_{i3}+c_{i4},$ so $v_c = (2,1,1,1)$
+    $v'_c = (s'_1, s'_2, s'_3, s'_4), s'_i = c'_{i3}+c'_{i4},$ so $v'_c = (2,1,1,1),$
+    so $c_{i3}+c_{i4} \leq c'_{i3}+c'_{i4}.$
+    \item 
+    Let $\lambda'\in \mathbb{R}$ such that $\lambda'$ is an eigenvalue of $C'$ with associated eigenvector $v'$.
+    Then $\lambda' = 2.511547141694532$ and associated eigenvector $v'=(1, 0.8981609516297208, 1.255773570847266, 1.255773570847266)^T$.
+    \item 
+    Let  $\lambda\in \mathbb{R}$ such that $\lambda$ is an eigenvalue of $C$ with associated left eigenvector $v^T$.
+    Then $\lambda = 2.511547141694532$ and associated left eigenvector $v^T=(1, 0.715225238435091, 1, 0.7963219032594416)$.
+    \item 
+    $v^T * v' = (1, 0.715225238435091, 1, 0.7963219032594416) \\
+    * (1, 0.8981609516297208, 1.255773570847266, 1.255773570847266)^T
+    \\ = 3.89816095162972 >0.$
+
+    \end{enumerate}
+    
+    These facts satisfy the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$. Actually, both of
+     the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have $\rho(C')-\rho(C)>0$ by calculating on
+     computer.\cite[sage]{sage}
+>>>>>>> d85f389c36896558f5d2de0d4efdccad4dc25f7d
     Moreover, the corresponding directed graph of matrix $C'$ is, \cite[sage]{sage}
     \begin{center}
     \includegraphics{graph_Cprime.PNG}
