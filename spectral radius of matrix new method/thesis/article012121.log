@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  7 JAN 2021 17:10
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.6.22)  21 JAN 2021 07:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/version_12_28_2020.tex"
-(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/version_12_28_2020.tex
+**"c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article012121.tex"
+(c:/Users/urbaner3/Documents/NCTU_weng/spectral radius of matrix new method/thesis/article012121.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18> (c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -510,8 +510,8 @@ Package fontspec Info: Font family '標楷體(0)' created for font '標楷體' w
 \c@thm=\count308
  (c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write4
- Excluding comment 'comment') (./version_12_28_2020.aux)
-\openout1 = `version_12_28_2020.aux'.
+ Excluding comment 'comment') (./article012121.aux)
+\openout1 = `article012121.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
 LaTeX Font Info:    ... okay on input line 63.
@@ -603,20 +603,20 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 92.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
-] [2] [1] [2] (./version_12_28_2020.toc)
+] [2] [1] [2] (./article012121.toc)
 \tf@toc=\write5
-\openout5 = `version_12_28_2020.toc'.
+\openout5 = `article012121.toc'.
 
  [3] [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] (./version_12_28_2020.aux) ) 
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] (./article012121.aux) ) 
 Here is how much of TeX's memory you used:
- 18128 strings out of 479277
- 416590 string characters out of 5883835
+ 18123 strings out of 479277
+ 416373 string characters out of 5883835
  686951 words of memory out of 5000000
- 35465 multiletter control sequences out of 15000+600000
+ 35460 multiletter control sequences out of 15000+600000
  539961 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 52i,12n,60p,548b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,12n,60p,543b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on version_12_28_2020.pdf (16 pages).
+Output written on article012121.pdf (17 pages).

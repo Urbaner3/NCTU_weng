@@ -250,7 +250,7 @@ Given an directed graph $G$, the $\textit{adjacency matrix}$ of
      \]
 \end{defn}
 
-Given a directed graph $G$, the spectral radius of $G$ is the
+Given a directed graph $G$, the spectral radius of $G$ ,\cite{spec_rad}, is the
  spectral radius of the adjacency matrix of $G$, denoted by
  $\rho(G)$. Note that the spectral radius $\rho(G)$ is
  independent of the ordering of the vertex set of $G$.
@@ -598,11 +598,11 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 0
     \end{pmatrix},$$
-<<<<<<< HEAD
+
     which satisfies the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$.
      Actually, both of the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have
       $\rho(C')-\rho(C)>0$ by calculating on computer.
-=======
+
     Based on condition of theorem \ref{thm:conclusion},
     \begin{enumerate}[label=(\roman*)]
         \item  $C[[n]|[n-1]]\leq C'[[n]|[n-1]]$ and $c_{ik}+c_{in}\leq c'_{ik}+c'_{in}$ for all $1\leq i\leq n$;
@@ -657,7 +657,7 @@ the same $K$-rooted eigenvector corresponding to $\lambda'+d,$ where $d$ is a co
     These facts satisfy the assumptions in Theorem~\ref{thm:conclusion}. Hence $\rho(C)\leq\rho(C')$. Actually, both of
      the values of $\rho(C)$ and $\rho(C')$ are close to 2.511547, and we have $\rho(C')-\rho(C)>0$ by calculating on
      computer.\cite[sage]{sage}
->>>>>>> d85f389c36896558f5d2de0d4efdccad4dc25f7d
+
     Moreover, the corresponding directed graph of matrix $C'$ is, \cite[sage]{sage}
     \begin{center}
     \includegraphics{graph_Cprime.PNG}
@@ -712,7 +712,6 @@ A. E. Brouwer, W. H. Haemers, {\it Spectra of graphs}, Springer, 2012
 
 \bibitem{prn_fros2}
 R. A. Horn , C. R. Johnson, {\it Matrix analysis}, Cambrigde University Press, 1985.
-
 \bibitem{sage}
 [Sage] SageMath, the Sage Mathematics Software System (Version 9.2),
        The Sage Developers, 2020, https://www.sagemath.org.  %sage tutorial
