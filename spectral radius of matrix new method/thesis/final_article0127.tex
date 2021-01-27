@@ -22,6 +22,13 @@
 \usepackage{enumitem}% enumerate labels   roman
 \usepackage{graphicx}
 \usepackage{comment}
+%\usepackage{lipsum}
+\usepackage{background}
+\backgroundsetup{scale=1,angle=0,opacity=1,
+    contents = {\includegraphics[scale = 1]{logo.jpg}}
+}
+%\usepackage{watermark}
+%\watermark{\includegraphics[scale = 1]{logo.jpg}}
 
 \graphicspath{{images/}}
 \usetikzlibrary{arrows}
@@ -250,6 +257,8 @@ associated with a simple directed graph.
      \]
 \end{defn}
 
+%ij index orientation to your instinct, and do the definition
+
 Given a directed graph $G$, the spectral radius of $G$ is the
  spectral radius of the adjacency matrix of $G$, denoted by
  $\rho(G)$. Note that the spectral radius $\rho(G)$ is
@@ -267,12 +276,14 @@ Conversely, we can also define a directed graph $G$ from a given
 The spectral radius is an important indicator to specify the relation
  of connected vertices in a graph, so it is meaningful to find a simple
  method to estimate the spectral radius. A simple and excellent
- executable method to estimate the spectral radius has some features,
- first, the bios is minimized, and second, there must be a way to prove
+ executable method to estimate the spectral radius has some features.
+ First, the bios is minimized, and second, there must be a way to prove
  it sensible. Enumerate these factors and prove it correctly would make this method reliable.
 
 In \cite{chang}, Cheng and Weng give many bounds of the spectral radius of a nonnegative square matrix. And based on their theory and Perron-Frobenius theorem, we give another approach to obtain an upper bound of the spectral radius and apply it on the adjacency matrix of a directed graph.
-All theorems come from continuous discussions between C.W. Weng and K.H. Chen. These were all documented.\cite{src_files}
+All theorems come from continuous discussions between C.W. Weng and K.H. Chen. These were all documented\cite{src_files}.
+
+%張耀祖：有沒有比較何者較好？
 
 %%%%%%%%%%%%%%%%%%%%%%%
 \section{Preliminaries}
@@ -293,7 +304,7 @@ The following is Perron–Frobenius theorem, which provides a feature of
 
  A well-known application of Theorem~\ref{thm:Perron_Frobenius}
  show that if matrix  $C'$ {\it majors} $C$ (in notation $C\leq C'$),
- i.e. $c_{ij}\leq c'_{ij}$ for all $ij,j$, then $\rho(C)\leq \rho(C')$.
+ i.e. $c_{ij}\leq c'_{ij}$ for all $i,j$, then $\rho(C)\leq \rho(C')$.
 Our main result shows that the assumption $C\leq C'$ can be a little loosen. 
 Our theory is based on the following theorem, which is from \cite{chang}. 
 
@@ -345,6 +356,7 @@ Our theory is based on the following theorem, which is from \cite{chang}.
         \begin{align*} &\lambda v^TPCQu=v^TPCQu=\sum_{i,j} v_i(PCQ)_{ij}u_j\\ =&
          \sum_{i,j} v_i(PC'Q)_{ij}u_j=v^TPC'Qu=\lambda'v^TPC'Qu,
          \end{align*} so $\lambda=\lambda'$ by (\ref{pre2}).
+         %This paragraph is hard to see the fact of proof. The formula is too brief.
 \end{proof}
 
 %%%%%%%%%%%%%%%%%%%%
@@ -353,10 +365,10 @@ Our theory is based on the following theorem, which is from \cite{chang}.
 
 We will apply Theorem~\ref{pre_thm} by using two particular square matrices $P$ and $Q$ to obtain our main result. 
 We use $[n-1]$ as notation of the set of integers from $1$ to $n-1$, which is $\{1,2,\cdots,n-1\}$.
-Throughout this thesis we fix $k\in [n-1]$, let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$
+Throughout this thesis we fix $k\in [n-1]$. Let $E_{kn}$ denote the $n\times n$ binary matrix with a unique $1$
 appearing in the position $k,n$ of $E_{kn}$. Now we apply the previous Theorem \ref{pre_thm} with $P=I$ and
 
-
+%張：在Q的符號中看不出與k有關
 \begin{equation} \label{Q_1}
 Q=I+E_{kn}=\begin{pmatrix}
 1 &   &        &       &        &   & 0 \\
@@ -400,14 +412,14 @@ If $u=(u_1, u_2, \ldots, u_n)^T$, then
 \end{lem}
 
 \begin{proof}
-(i), (ii) follow immediate from the definition of $k$-rooted and
+(i), (ii) follow immediately from the definition of $k$-rooted and
  $Qu=(u_1,\ldots, u_{k-1},u_k+u_n, u_{k+1}, \ldots,  u_n)^T$.
 \end{proof}
 
 Below is our first result, in which the first condition implies the first $n-1$ columns of $C'$ major
  the same columns of $C$, and the sum of $k$-th and $n$-th columns of $C'$ also majors that of $C$. The second and the third condition
  suggest that $C$ and $C'$ have nonnegative $k$-rooted eigenvectors. And the forth condition is simpler
-  but with the same meaning in Theorem~\ref{pre_thm} 
+  but with the same meaning in Theorem~\ref{pre_thm}. 
 
 
 We need a notation of submatrix, which is taken from some columns and some rows of a matrix.
@@ -452,7 +464,7 @@ if and only if
       of Theorem~\ref{pre_thm} clearly hold by conditions~\ref{thm_main:condition_iii}, \ref{thm_main:condition_iv} of this theorem since $P = I$ and
        $v'= Qu$. Hence $\lambda \leq \lambda' $ by the necessary condition of Theorem~\ref{pre_thm}. Moreover,
         $\lambda = \lambda'$ if and only if (\ref{pre0}) holds, and this is equivalent to
-         conditions \ref{thm_main:equ_cond_a}, \ref{thm_main:equ_cond_b} and \ref{thm_main:equ_cond_c} of this theorem.
+         conditions \ref{thm_main:equ_cond_a}, \ref{thm_main:equ_cond_b}, and \ref{thm_main:equ_cond_c} of this theorem.
 \end{proof}
 
 We are interested in the matrices $C'$ that have $k$-rooted eigenvectors.
@@ -479,7 +491,7 @@ $Q^{-1}=I-E_{kn}.$
 \end{lem}
 
 \begin{proof}
-Since $$Q(I-E_{kn}=(I+E_{kn})(I-E_{kn})=I-E_{kn}+E_{kn}-E_{kn}E_{kn}=I,$$ we have
+Since $$Q(I-E_{kn})=(I+E_{kn})(I-E_{kn})=I-E_{kn}+E_{kn}-E_{kn}E_{kn}=I,$$ we have
 $Q^{-1}=I-E_{kn}$.
 \end{proof}
 
@@ -548,7 +560,7 @@ Note that Theorem~\ref{thm_main} depends on eigenvectors. The following is an ei
 
 
 \begin{thm}\label{thm:conclusion}
-    Let $C$ be an $n\times n$ nonnegative irreducible matrix and $C'$ be an $n\times n$ $k$-rooted matrix such that $C'Q$ majorizes $CQ$. 
+    Let $C$ be an $n\times n$ nonnegative irreducible matrix and $C'$ be an $n\times n$ $k$-rooted matrix such that $C'Q$ majors $CQ$. 
  Then $\rho(C)\leq \rho(C')$. 
 \end{thm}
 
@@ -584,16 +596,16 @@ Let $G$ be the digraph depicted below.
 
 %edges
 
-\draw[edge] (1) to[bend right] (3);
-\draw[edge] (1) to[bend right] (4);
-\draw[edge] (2) to (1);
-\draw[edge] (2) to[bend right] (4);
-\draw[edge] (3) to (2);
-\draw[edge] (3) to[bend right] (1);
-\draw[edge] (3) to[bend right] (4); 
-\draw[edge] (4)[bend right] to (1); 
-\draw[edge] (4)[bend right] to (2); 
-\draw[edge] (4)[bend right] to (3); 
+\draw[edge] (1) to (2);
+\draw[edge] (1) to[bend left] (3);
+\draw[edge] (1) to[bend left] (4);
+\draw[edge] (2) to (3);
+\draw[edge] (2) to[bend left] (4);
+\draw[edge] (3) to[bend left] (1);
+\draw[edge] (3) to[bend left] (4); 
+\draw[edge] (4)[bend left] to (1); 
+\draw[edge] (4)[bend left] to (2); 
+\draw[edge] (4)[bend left] to (3); 
 \end{tikzpicture}
 \end{center}
 
@@ -631,22 +643,22 @@ which is the adjacency matrix of $G'$ depicted below.
 
 %edges
 
-\draw[edge] (1) to[bend right] (3);
-\draw[edge] (1) to[bend right] (4);
-\draw[edge] (2) to (1);
+\draw[edge] (1) to (2);
+\draw[edge] (1) to[bend left] (3);
+\draw[edge] (1) to[bend left] (4);
 \draw[edge] (2) to (3);
-\draw[edge] (3) to[bend right] (1);
+\draw[edge] (2) to (4);
+\draw[edge] (3) to[bend left] (1);
 \draw[edge] (3) to (2);
-\draw[edge] (3) to[bend right] (4);
-\draw[edge] (4)[bend right] to (1);
-\draw[edge] (4) to (2);
-\draw[edge] (4)[bend right] to (3);
+\draw[edge] (3) to[bend left] (4);
+\draw[edge] (4)[bend left] to (1);
+\draw[edge] (4)[bend left] to (3);
 \end{tikzpicture}
 \end{center}
 
 
 Note that both $G$ and $G'$ have the same number of edges, 
-neither $A$ majories $A'$ nor $A'$ majories $A$. Our main result still can do comparison between 
+neither $A$ majors $A'$ nor $A'$ majors $A$. Our main result still can do comparison between 
 $\rho(A)$ and $\rho(A')$. 
 We first observe that $A$ is irreducible and $A'$ is $k$-rooted for $k=3$. Moreover 
 $A'Q=\begin{pmatrix}
@@ -660,8 +672,8 @@ $A'Q=\begin{pmatrix}
     1 & 1 & 0 & 1\\
     1 & 1 & 1 & 1
     \end{pmatrix}=AQ$. 
-Hence Hence $\rho(A)\leq\rho(A')$ by Theorem~\ref{thm:conclusion} with $C=A$ and $C'=A'$. 
-Both of the values of $\rho(C)$ and $\rho(C')$ are close to $2.511547$ by  calculating on computer. \cite[sage]{sage}
+Hence $\rho(A)\leq\rho(A')$ by Theorem~\ref{thm:conclusion} with $C=A$ and $C'=A'$. 
+Both of the values of $\rho(C)$ and $\rho(C')$ are close to $2.511547$ by  calculating on computer \cite[sage]{sage}.
 \end{exam}
 
 To finish the thesis, we provide an example to show that the `$k$-rooted' assumption of $C'$ is necessary in Theorem~\ref{thm:conclusion}. 
@@ -695,10 +707,11 @@ Using computer, \cite[sage]{sage}
     $$\rho(C)\approx 2.234\not\leq 2.148\approx \rho(C').$$
     This is because $C'$ is not $k$-rooted as $c'_{33}+c'_{34}=0\not\geq 1=c'_{43}+c'_{44}$.
 
-All theorems come from continuous discussions between C.W. Weng and K.H. Chen. These were all documented.\cite{src_files}
+All theorems come from continuous discussions between C.W. Weng and K.H. Chen. These were all documented \cite{src_files}.
     
 \end{exam}
 
+% 傅：tournaments graph, choosing the vertex with the maximum out-degree, does the theory implies the spectual radii are in an indecreasing sequence?  我：The irreducible in preserved.
 
 %\section*{References}
 \begin{thebibliography}{20}
@@ -717,7 +730,7 @@ R. A. Horn , C. R. Johnson, {\it Matrix analysis}, Cambrigde University Press, 1
 [Sage] SageMath, the Sage Mathematics Software System (Version 9.2),
        The Sage Developers, 2020, https://www.sagemath.org.  %sage tutorial
 \bibitem{src_files}
-[github] K. H. Chen, C. W. Weng, source files to the essay, A simple method on comparison between spectral radii of two directed graphs,
+[github] K. H. Chen, source files to the essay, A simple method on comparison between spectral radii of two directed graphs,
      2021, https://reurl.cc/6yy32Z.  % https://github.com/Urbaner3/NCTU_weng. 
 
      \newblock the link: $https://github.com/Urbaner3/NCTU\_weng$
